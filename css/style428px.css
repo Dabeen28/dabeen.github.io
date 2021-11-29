@@ -1,0 +1,484 @@
+@media screen and (max-width:428px) {
+
+  .container {
+    width: 80%;
+    height: 66.7rem;    
+    margin: 0 auto;
+  }
+
+  h2 { margin-top: 2rem; }
+  
+  .logo {
+    font-size: 10vw;
+    line-height: 3rem;
+    top: 2.7rem;
+    left: 0rem;
+  }
+  
+  /* header 영역입니다. */
+  .header { width: 100%; }
+  
+  /* visual 영역입니다. */
+  .visual { width: 100%; }
+  .visual .container { width: 80%; height: 66.7rem; }
+  
+  .visual-box-1 {
+    width: 100vw;
+    height: 55%;
+    right: -13%;
+    bottom: 0rem;
+  }
+  
+  .visual-flower-1 {
+    display: none;
+  }
+  
+  .visual-flower-2 {
+    bottom: 0rem;
+    width: 39.5%;
+    height: 46%;
+    right: 10%;
+  }
+  
+  .visual-box-2 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 74%;
+    height: 35%;
+    margin-top: 33.2%;
+    margin-left: 26%;
+  }
+  
+  .visual-img-1 {
+    width: 100%;
+    height: 8%;
+  }
+  
+  .visual-img-2 {
+    width: 100%;
+    height: 40%;
+  }
+  
+  .visual-img-3 {
+    width: 71%;
+    height: 16.8%;
+    margin-left: 29%;
+  }
+  
+  /* profile 영역입니다. */
+  .profile {width: 100%; height: 66.7rem; }
+  .profile .container { width: 80%; height: 66.7rem; }
+  .profile-item-1 { height: 25rem; }
+
+  .profile-item-1 p {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    left: 0rem;
+  }
+
+  .profile-txt-1 {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .profile-txt-2 {
+    text-align: center;
+    line-height: 0rem;
+    height: 1rem;
+  }
+
+  .profile-txt-3 {
+    display: none;
+  }
+
+  .profile-item-1 span {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .profile-item-1 span img {
+    height: 13rem;
+  }
+
+  .profile-item-2 {
+    display: none;
+    width: 80%;
+  }
+
+  .profile-item-3-bottom-2 { 
+    display: flex; 
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .profile-item-3-bottom-2 li {
+    width: 100%;
+  }
+
+  .profile-item-3-bottom-2 li { margin-bottom: 4.7rem; }
+  .profile-item-3-bottom-2 li:first-child { margin-bottom: 4.9rem; }
+
+  .profile-item-3 {
+    width: 100%;
+    height: 29rem;
+    padding-left: 0rem;
+  }
+
+  .profile-item-3-top > span {
+    text-align: center;
+  }
+
+  .profile-item-3-top { height: 10rem; }
+
+  .profile-item-3-top-item {
+    margin-top: 0.5rem;
+  }
+
+  .profile-item-3-bottom-1 li {
+    width: 100%;
+    margin-bottom: 2.7rem;
+  }
+
+  
+  /* aboutme 영역입니다. */
+  .aboutme {width: 100%; height: 66.7rem; }
+  .aboutme .container { width: 80%; height: 66.7rem; }
+
+  .about-tit {
+    font-size: 2.5rem;
+    margin: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-tit::before {
+    left: -1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .about-tit::after {
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .aboutbox {
+    height: 75%;
+  }
+
+  .aboutbox-1 {
+    padding-left: 0rem;
+    height: 50%;
+  }
+
+  .aboutbox-1 div {
+    border: 3px solid #ff8585;
+    width: 100%;
+    height: 18%;
+  }
+
+  .aboutbox-1 div:last-child {
+    width: 100%;
+  }
+
+  .aboutbox-1 div:first-child::before { display: none; }
+  .aboutbox-1 div:last-child::after { display: none; }
+  
+  .about-img {
+    top: 12.9rem;
+    right: 0.3rem;
+    width: 8rem;
+    height: 12rem;
+  }
+
+  .aboutbox-2 {
+    height: 45%;
+    margin-top: 3rem;
+  }
+
+  .possi-box-2 > div {
+    width: 17.5rem;
+    top: -4.8rem;
+    right: 5.6rem;
+  }
+
+  .aboutbox-2 p {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    line-height: 2.2rem;
+    width: 100%;
+  }
+
+  .possi-box-1-title {
+    font-size: 1.6rem;
+  }
+
+  .possi-box-1-subtitle {
+    font-size: 1.4rem;
+    margin-left: 0rem;
+    padding: 0 0.3rem;
+  }
+
+  .possi-box-1-txt {
+    font-size: 1.2rem;
+  }
+
+  /* possibility 영역입니다. */
+  .possibility { width: 100%; height: 66.7rem; }
+  .possibility .container { width: 80%; height: 66.7rem; }
+
+  .possi-box-1 {
+    width: 100%;
+  }
+
+  .possi-box-2 {
+    display: none;
+  }
+  
+  /* publ 영역입니다. */
+  .publ { width: 100%; height: 66.7rem; }
+  .publ .container { width: 80%; height: 18rem; }
+
+  .publ > .swiper-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .publ-wrapper {
+    margin-left: 6rem;
+  }
+
+  /* design 영역입니다. */
+  .design { width: 100%; height: 66.7rem; }
+  .design .container { width: 80%; height: 66.7rem; }
+
+  .design-left {
+    width: 100%;
+    height: 28.2rem;
+    top: 2rem;
+  }
+  
+  .design-right {
+    position: relative;
+    width: 29rem;
+    height: 40rem;
+    top: 0rem;
+    right: -3rem;
+  }
+  
+  .design-container-left {
+    top: 1.3rem;
+    width: 81%;
+    height: 57%;
+    margin-left: 14.2%;
+}
+  
+  .design-moniter {
+    margin-left: -2rem;
+    height: 80%;
+  }
+
+  .design-moniter img {
+    width: 100%;
+    height: 100%;
+    left: 0rem;
+  }
+
+  .design-slide-left {
+    width: 63%;
+  }
+
+  .design-slide-left img {
+    width: 100%;
+  }
+  
+  .design-wrapper-right {
+    width: 100%;
+    height: 26rem;
+    top: 8rem;
+  }
+
+  .design-wrapper-right li {
+    width: 92%;
+  }
+  
+  .design-slide-right {
+    width: 60rem;
+  }
+  
+  .design-button-next {
+    top: 5rem;
+    margin-right: 3rem;
+  }
+  
+  .design-button-prev {
+    top: 8rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .design-button-next {
+    top: 8rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  
+  .design-slide-right-button a {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .design-slide-right-num {
+    font-size: 2rem;
+  }
+
+  .design-slide-right-tit {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .design-slide-right-txt {
+    display: none;
+  }
+
+
+
+
+
+
+  
+  /* life 영역입니다. */
+  .life { width: 100%; height: 66.7rem; }
+  .life .container { width: 80%; height: 66.7rem; }
+
+  .life > .container > h2 {
+    padding: 1rem 0;
+    padding-left: 4rem;
+    margin-left: -4rem;
+    margin-top: 2rem;
+  }
+  
+  .life-wrap-768 {
+    grid-template-columns: 9.7rem 9.7rem 9.7rem;
+    grid-template-rows: 9.7rem 9.7rem 9.7rem;
+    grid-gap: 0.8rem;
+  }
+
+  .life-wrap-768 div:nth-child(4) span {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .life-wrap-768 div:nth-child(4) p {
+    font-size: 0.6rem;
+    line-height: 1.4rem;
+    padding: 0 0.3rem;
+  }
+
+  /* contact 영역입니다. */
+  .contact { width: 100%; height: 66.7rem; }
+  .contact .container { width: 80%; height: 66.7rem; }
+  .contact-wrap { width: 100%; height: 66.7rem; margin-top: 25%;}
+  
+  .contact-wrap > p:nth-child(1) {
+    font-size: 2.6rem;
+  }
+  
+  .contact-box {
+    width: 100%;
+    height: 80%;
+    margin-left: 0rem;
+  }
+  
+  .contact-box ul {
+    width: 13rem;
+  }
+
+  .contact-box ul li {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .contact-box ul li > p {
+    font-size: 1.8rem;
+  }
+  
+  .contact-box ul li > a {
+    font-size: 1.4rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
