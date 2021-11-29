@@ -1,0 +1,667 @@
+@media screen and (max-width:1366px) {
+
+  .container {
+    position: relative;
+    display: block;
+    width: 108.6rem;
+    height: 76.8rem;
+    margin: 0 auto;
+}
+
+  h2 {
+    margin-top: 5rem;
+    padding: 4.2rem 0rem;
+    padding-bottom: 3rem;
+    font-size: 3.2rem;
+  }
+
+  /* gotop 파트입니다. */
+.gotop {
+  right: 5%;
+  bottom: 10%;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #ccc;
+}
+
+.icon-up-dir:before {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.2rem;
+  font-size: 5rem;
+}
+
+  /* header 파트입니다. */
+  .logo {
+    font-size: 5rem;
+  }
+
+  .header {
+    height: 6rem;
+  }
+
+  .gnb {
+    position: absolute;
+    right: 0;
+  }
+
+  .gnb > li > a {
+    margin: 2.3rem 3.7rem;
+    font-size: 1.5rem;
+  }
+
+  .gnb > li > a:hover {
+    border-bottom: 3px solid #ff8282;
+  }
+
+  /* visual 파트입니다. */
+  .visual-box-1 {
+    width: 70rem;
+    height: 65rem;
+    right: -5rem;
+  }
+
+  .visual-flower-1 {
+    top: 7rem;
+    right: 22rem;
+    width: 11.5rem;
+    height: 13rem;
+  }
+
+  .visual-flower-2 {
+    right: 2.8rem;
+    width: 23.5rem;
+    height: 31rem;
+  }
+
+  .visual-box-2 {
+    margin-top: 23rem;
+  }
+
+  .visual-img-1 {
+    float: left;
+    width: 43.7rem;
+    height: 2.6rem;
+    background-size: contain;
+  }
+
+  .visual-img-2 {
+    float: left;
+    width: 43.4rem;
+    height: 15.7rem;
+    background-size: contain;
+  }
+
+  .visual-img-3 {
+    float: left;
+    width: 35.2rem;
+    height: 7.8rem;
+    margin-left: 8rem;
+    background-size: contain;
+  }
+
+
+  /* profile 영역 입니다. */
+  .profile {
+    height: 76.8rem;
+  }
+  
+  .profile .container {
+    height: 108rem;
+  }
+
+  .profile-wrap {
+    margin-top: 2rem;
+  }
+
+  .profile-item-1 span {
+    height: 17.5rem;
+    width: 17.5rem;
+    border: 3px solid #ff8282;
+  }
+
+  .profile-item-1 span::after {
+    top: 2rem;
+    right: 1.7rem;
+    font-size: 2rem;
+  }
+
+  .profile-item-1 span img {
+    height: 15.3rem;
+  }
+
+  .profile-txt-1 {
+    font-size: 2.8rem;
+  }
+
+  .profile-txt-2 {
+    font-size: 1.4rem;
+  }
+  
+  .profile-txt-3 {
+    font-size: 2.8rem;
+    margin-left: -5rem;
+  }
+
+  .profile-txt-3::before {
+    width: 2.6rem;
+    top: 33rem;
+    left: -2.5rem;
+  }
+
+  .profile-txt-3::after {
+    width: 2.6rem;
+    top: 33rem;
+    left: 21rem;
+  }
+
+  .profile-item-2-right {
+    width: 28.5rem;
+  }
+
+  .profile-item-2-right li {
+    line-height: 2.6rem;
+    font-size: 1.25rem;
+  }
+
+  .profile-item-3 {
+    width: 42.8rem;
+    margin-left: 2rem;
+  }
+
+  .profile-item-2-left {
+    font-size: 1.5rem;
+  }
+
+  .profile-item-2-left li:nth-child(1) {
+    margin-bottom: 5.2rem;
+  }
+
+  .profile-item-2-right li:nth-child(1) {
+    margin-bottom: 2.2rem;
+  }
+
+  .profile-item-2-left li:nth-child(2) {
+    margin-bottom: 8.1rem;
+  }
+
+  .profile-item-2-right li:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+
+  .profile-item-2-left li:nth-child(3) {
+    margin-bottom: 17.1rem;
+  }
+
+  .profile-item-2-right li:nth-child(3) {
+    margin-bottom: 2.1rem;
+  }
+
+  .profile-item-3-top {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-item-3-top-progressbar li {
+    width: 5rem;
+  }
+
+  .profile-item-3-top-item img {
+    width: 4.1rem;
+    height: 4.1rem;
+  }
+
+  .profile-item-3-bottom-1 li {
+    width: 4.3rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .profile-item-3-bottom-1 img {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .profile-item-3-bottom-2 li {
+    width: 29rem;
+    height: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .profile-item-3-bottom-2 li:first-child {
+    margin-top: 1.7rem;
+  }
+
+  /* About 영역 입니다. */
+  .aboutme {
+    height: 76.8rem;
+  }
+  
+  .aboutme .container{
+    height: 108rem;
+    height: 76.8rem;
+  }
+
+  .about-tit {
+    margin: 3.5rem 0;
+    font-size: 4rem;
+  }
+
+  .about-tit::before {
+    left: 25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .about-tit::after {
+    right: 25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .aboutbox {
+    width: 101.7rem;
+    height: 42rem;
+  }
+
+  .aboutbox-1 {
+    height: 100%;
+    width: 67.9rem;
+    padding-left: 5rem;
+  }
+
+  .aboutbox-1 div {
+    width: 52.3rem;
+    height: 6.4rem;
+    border: 7px solid #ff8585;
+  }
+
+  .aboutbox-1 div:first-child::before {
+    font-size: 5.5rem;
+    left: -3rem;
+  }
+
+  .aboutbox-2 {
+    width: 34rem;
+  }
+
+  .aboutbox-2 p {
+    width: 27rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .aboutbox-1 div span {
+    font-size: 2.2rem;
+    margin-left: 8rem;
+  }
+
+  .aboutbox-1 div:last-child {
+    width: 60.2rem;
+  }
+
+  .aboutbox-1 div:last-child span {
+    margin-left: 7.8rem;
+  }
+
+  .aboutbox-1 div:last-child::after {
+    font-size: 5.5rem;
+    bottom: 0rem;
+    right: 23.6rem !important;
+  }
+
+  .about-img {
+    top: 7.9rem;
+    right: 35.3rem;
+    width: 26.9rem;
+    height: 33.4rem;
+  }
+
+  /* Possibility 영역 입니다. */
+  .possibility {
+    height: 76.8rem;
+  }
+
+  .possi-box {
+    margin-top: 5rem;
+  }
+
+  .possi-box-1 {
+    width: 45rem;
+    height: 100%;
+    margin-right: 0rem;
+  }
+
+  .possi-box-1 div:nth-child(2) {
+    margin: 4rem 0;
+  }
+
+  .possi-box-1-title {
+    font-size: 2rem;
+  }
+
+  .possi-box-1-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .possi-box-1-txt {
+    font-size: 1.4rem;
+    letter-spacing: -0.03rem;
+    width: 100%;
+  }
+
+  .possi-box-2 {
+    width: 49.6rem;
+    height: 49.7rem;
+    background-size: 100%;
+    background-position-x: 3rem;
+  }
+
+  .possi-box-2 > div {
+    top: 6.3rem;
+    right: 9.7rem;
+    width: 29.5rem;
+  }
+
+  .possi-box-2 span:nth-child(1) {
+    top: 6rem;
+    right: 24.9rem;
+  }
+
+  .possi-box-2 span:nth-child(2) {
+    top: 14.9rem;
+    right: 9rem;
+  }
+
+  .possi-box-2 span:nth-child(3) {
+    top: 33rem;
+    right: 9rem;
+  }
+
+  .possi-box-2 span:nth-child(4) {
+    top: 41.9rem;
+    right: 24.9rem;
+  }
+
+  .possi-box-2 span:nth-child(5) {
+    top: 33rem;
+    right: 40.5rem;
+  }
+
+  .possi-box-2 span:nth-child(6) {
+    top: 14.9rem;
+    right: 40.5rem;
+  }
+
+  .possi-box-2 span:nth-child(1)::after,
+  .possi-box-2 span:nth-child(2)::after,
+  .possi-box-2 span:nth-child(3)::after,
+  .possi-box-2 span:nth-child(4)::after,
+  .possi-box-2 span:nth-child(5)::after,
+  .possi-box-2 span:nth-child(6)::after {
+    font-size: 1.8rem;
+  }
+
+  /* Publishing 파트입니다. */
+  .publ {
+    height: 76.8rem;
+  }
+
+  .publ > .container {
+    width: 108.6rem;
+  }
+
+  .publ > .swiper-wrapper {
+    width: 108.6rem;
+    height: auto;
+  }
+
+  .swiper-slide > .container,
+  .swiper-container {
+    width: 100.6rem;
+    height: 66.8rem;
+  }
+
+  .publ-container {
+    height: 50rem;
+  }
+
+  .publ > .container > h2 {
+    margin-bottom: 12rem;
+  }
+
+  .publ-scrollbar {
+    bottom: -53rem;
+  }
+
+  .publ-slide {
+    width: 28.8rem;
+    height: 37.6rem;
+    margin-right: 7.1rem;
+  }
+
+  .publ-slide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .publ-slide-txtbox {
+    width: 24.3rem;
+    height: 100%;
+    top: 3rem;
+    left: 2.55rem;
+  }
+
+  .publ-slide-txtbox-tit-num {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .publ-slide-txtbox-tit-num::after {
+    top: 3.5rem;
+    width: 3.5rem;
+    height: 0.5rem;
+  }
+
+  .publ-slide-txtbox span {
+    padding: 1.2rem 2.1rem;
+  }
+
+  .publ-slide-txtbox span:last-child {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .publ-button-prev {
+    top: 14.5rem;
+    right: 11.2rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  .publ-button-next {
+    top: 14.5rem;
+    right: 4.2rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+
+  /* design 파트입니다. */
+  .design {
+    height: 76.8rem;
+  }
+
+  .design-wrap {
+    height: 100%;
+  }
+
+  .design > .container {
+    width: 108.6rem;
+    height: 76.8rem;
+  }
+
+  .design-left {
+    width: 59.8rem;
+    height: 43.2rem;
+  }
+
+  .design-moniter {
+    height: 100%;
+    width: 100%;
+  }
+
+  .design-moniter img {
+    height: 95%;
+    left: -8.1rem;
+  }
+
+  .design-container-left {
+    top: 2.5rem;
+    left: 1.1rem;
+    width: 48.1rem;
+    height: 29rem;
+  }
+
+  .design-slide-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .design-right {
+    top: 0rem;
+    right: 0rem;
+    width: 42rem;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .design-wrapper-right {
+    width: 43rem;
+  }
+
+  .design-slide-right {
+    height: 52rem;
+    width: 55rem;
+  }
+
+  .design-slide-right-txt {
+    font-size: 1.4rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .design-slide-right-button a {
+    font-size: 1.4rem;
+    padding: 1.6rem 2.5rem;
+  }
+
+  .design-button-prev {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+  .design-button-next {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+
+
+  /* life 파트입니다. */
+  .life {
+    height: 76.8rem;
+  }
+
+  .life > .container > h2 {
+    padding: 2rem 0;
+    padding-left: 5rem;
+    margin-left: -4rem;
+    margin-top: 8rem;
+  }
+
+  .life > .container {
+    width: 108.6rem;
+    height: 76.8rem;
+  }
+
+  .life-wrap {
+    width: 92.2rem;
+    height: 52rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .life-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+  .life-wrap > div > img {
+    left: 4rem;
+  }
+
+  /* contact 파트입니다. */
+  .contact {
+    height: 76.8rem;
+  }
+
+  .contact-wrap {
+    width: 100rem;
+    height: 47.2rem;
+    margin-top: 17rem;
+  }
+
+  .contact-wrap > p:nth-child(1) {
+    font-size: 5.8rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .contact-wrap > p:nth-child(2) {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .contact-box {
+    width: 90%;
+    margin-left: 5rem;
+  }
+
+  .contact-box ul li {
+    padding-top: 7.2%;
+  }
+
+  .contact-box ul li:first-child {
+    padding-top: 9.2%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} 

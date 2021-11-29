@@ -1,0 +1,664 @@
+@media screen and (max-width:1024px) {
+
+  .container {
+    position: relative;
+    display: block;
+    width: 75.2rem;
+    height: 76.8rem;
+    margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-top: 10rem;
+  padding: 2.2rem 0rem;
+  padding-bottom: 3rem;
+}
+
+/* gotop 파트입니다. */
+.gotop {
+  right: 3%;
+  bottom: 10%;
+  width: 5rem;
+  height: 5rem;
+  border: 1.5px solid #ccc;
+}
+
+.icon-up-dir:before {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.2rem;
+  font-size: 5rem;
+}
+
+  /* header 파트입니다. */
+.logo {
+  font-size: 3.5rem;
+}
+
+.gnb {
+  margin-left: 23rem;
+}
+
+.gnb > li > a {
+  margin: 2.1rem 2.1rem;
+}
+
+/* visual 파트입니다. */
+.visual-box-1 {
+  width: 55rem;
+  height: 68rem;
+  right: -7rem;
+}
+
+.visual-flower-1 {
+  top: 7rem;
+  right: 14rem;
+  width: 14.5rem;
+  height: 15rem;
+}
+
+.visual-flower-2 {
+  width: 21.5rem;
+  height: 30rem;
+  right: -5rem;
+}
+
+.visual-box-2 {
+  width: 28.2rem;
+}
+
+.visual-img-1 {
+  width: 30.7rem;
+  height: 2.6rem;
+}
+
+.visual-img-2 {
+  width: 30.4rem;
+  height: 11.7rem;
+}
+
+.visual-img-3 {
+  width: 26rem;
+  height: 8.8rem;
+  margin-left: 4rem;
+  margin-top: 6rem;
+}
+
+/* Profile 영역입니다. */
+.profile {
+}
+
+.profile-item-1 {
+  width: 30rem;
+}
+
+.profile-item-1 span {
+  width: 12rem;
+  height: 12rem;
+}
+
+.profile-item-1 span img {
+  height: 10.3rem;
+}
+
+.profile-item-1 span::after {
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.4rem;
+}
+
+.profile-item-2 {
+  width: 40.8rem;
+}
+
+.profile-item-2-left {
+  font-size: 1.2rem;
+  width: auto;
+}
+
+.profile-item-2-right {
+  font-size: 1rem;
+  width: auto;
+}
+
+.profile-item-2-right li {
+  font-size: 1rem;
+  line-height: 2.1rem;
+}
+
+.profile-txt-1 {
+  font-size: 2.4rem;
+}
+
+.profile-txt-2 {
+  font-size: 1.1rem;
+}
+
+.profile-item-2-left li:nth-child(1) {
+  margin-bottom: 3.2rem;
+}
+
+.profile-item-2-left li:nth-child(2) {
+  margin-bottom: 6rem;
+}
+
+.profile-item-2-left li:nth-child(3) {
+  margin-bottom: 13.7rem;
+}
+
+.profile-item-2-right li:nth-child(1) {
+  margin-bottom: 2.6rem;
+}
+
+.profile-item-2-right li:nth-child(2) {
+  margin-bottom: 2.5rem;
+}
+
+.profile-item-2-right li:nth-child(3) {
+  margin-bottom: 4.1rem;
+}
+
+.profile-txt-3 {
+  font-size: 2rem;
+  margin-left: -5rem;
+}
+
+.profile-txt-3::before {
+  width: 2rem;
+  top: 28rem;
+  left: -1.5rem;
+}
+
+.profile-txt-3::after {
+  width: 2rem;
+  top: 28rem;
+  left: 15rem;
+}
+
+.profile-item-3 {
+  width: 36.3rem;
+}
+
+.profile-item-3-bottom-1 img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.profile-item-3-bottom-1 li {
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+
+.profile-item-3-bottom-2 li:first-child {
+  margin-bottom: 3.9rem;
+  margin-top: 1.2rem;
+}
+
+.profile-item-3-bottom-2 li {
+  width: 19rem;
+  height: 2rem;
+  margin-bottom: 4rem;
+}
+
+.profile-item-3-top-progressbar li {
+  width: 4rem;
+}
+
+/* About 영역입니다. */
+.aboutme {
+}
+
+.aboutme .container {
+  width: 75.2rem;
+}
+
+.aboutbox {
+  width: 75.2rem;
+}
+
+.aboutbox-1 {
+  width: 45rem;
+  height: 90%;
+  margin-left: 0rem;
+}
+
+.about-img {
+  top: 8.65rem;
+  right: 19.3rem;
+  width: 23.9rem;
+  height: 28.4rem;
+}
+
+.aboutbox-1 div {
+  width: 39.3rem;
+  height: 6.4rem;
+  border: 8px solid #ff8585;
+}
+
+.aboutbox-1 div span {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.aboutbox-1 div:first-child::before {
+  font-size: 5rem;
+  left: -3rem;
+}
+
+.aboutbox-1 div:last-child::after {
+  bottom: 5rem;
+  font-size: 5rem;
+  right: 9rem !important;
+}
+
+.aboutbox-1 div:last-child {
+  width: 49.6rem;
+}
+
+.aboutbox-1 div:last-child span {
+  margin-left: 3rem;
+}
+
+.aboutbox-2 {
+  width: 21rem;
+}
+
+.aboutbox-2 p {
+  width: 21rem;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.about-tit {
+  font-size: 4rem;
+  margin: 3.5rem 0;
+  margin-bottom: 5rem;
+}
+
+.about-tit::before {
+  top: -2rem;
+  left: 7rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.about-tit::after {
+  top: -2rem;
+  right: 7rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Possibility 영역입니다. */
+.possibility .container {
+  width: 75.2rem;
+}
+
+.possi-box-1 {
+  width: 42.3rem;
+  margin-right: 0rem;
+}
+
+.possi-box-1-title {
+  font-size: 2rem;
+}
+
+.possi-box-1-subtitle {
+  font-size: 1.8rem;
+}
+
+.possi-box-1-txt {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.possi-box-2 span:nth-child(1) {
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 7rem;
+  right: 14.8rem;
+}
+
+.possi-box-2 span:nth-child(1)::after {
+  left: -1.4rem;
+}
+
+.possi-box-2 span:nth-child(2) {
+  width: 1.2rem;
+  height: 1.2rem; 
+  top: 14rem;
+  right: 3.3rem;
+}
+
+.possi-box-2 span:nth-child(2)::after {
+  right: -4.5rem;
+}
+
+.possi-box-2 span:nth-child(3) {
+  width: 1.2rem;
+  height: 1.2rem; 
+  top: 26.9rem;
+  right: 3.3rem;
+}
+
+.possi-box-2 span:nth-child(3)::after {
+  right: -6.5rem;
+}
+
+.possi-box-2 span:nth-child(4) {
+  width: 1.2rem;
+  height: 1.2rem;
+  right: 14.8rem;
+  top: 33.6rem;
+}
+
+.possi-box-2 span:nth-child(4)::after {
+  left: -3.2rem;
+}
+
+.possi-box-2 span:nth-child(5) {
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 26.9rem;
+  right: 26.4rem;
+}
+
+.possi-box-2 span:nth-child(5)::after {
+  left: -6.5rem;
+}
+
+.possi-box-2 span:nth-child(6) {
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 14rem;
+  right: 26.4rem;
+}
+
+.possi-box-2 span:nth-child(6)::after {
+  left: -6.5rem;
+}
+
+.possi-box-2 span:nth-child(1)::after, .possi-box-2 span:nth-child(2)::after, .possi-box-2 span:nth-child(3)::after, .possi-box-2 span:nth-child(4)::after, .possi-box-2 span:nth-child(5)::after, .possi-box-2 span:nth-child(6)::after {
+  font-size: 1.5rem;
+}
+
+.possi-box-2 {
+  height: 42rem;
+  width: 40rem;
+}
+
+.possi-box-2 > div {
+  width: 22.5rem;
+  top: 2.7rem;
+  right: 3.8rem;
+}
+
+/* Publishing 파트입니다. */
+.publ {
+}
+
+.publ > .container > h2 {
+  margin-bottom: 15rem;
+}
+
+.publ .container {
+  width: 75.2rem;
+}
+
+.swiper-slide > .container, .swiper-container {
+  width: 75.2rem;
+}
+
+.publ > .container {
+  width: 75.2rem;
+}
+
+.publ > .swiper-wrapper {
+  width: 75.2rem;
+  height: auto;
+}
+
+.publ-wrapper {
+  margin-left: 0rem;
+}
+
+.publ-slide {
+  margin-right: 5.9rem;
+  width: 21.2rem;
+  height: 28.1rem;
+}
+
+.publ-button-prev {
+  top: 15.5rem;
+  right: 6rem;
+}
+
+.publ-button-next {
+  top: 15.5rem;
+  right: 0rem;
+}
+
+.publ-slide-txtbox {
+  top: 2.5rem;
+  left: 2rem;
+  width: 17.4rem;
+}
+
+.publ-slide-txtbox-tit-num {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.publ-slide-txtbox-tit-num::after {
+  top: 3rem;
+  width: 3rem;
+  height: 0.4rem;
+}
+
+.publ-slide-txtbox-tit {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.publ-slide-txtbox-txt {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.publ-slide-txtbox span {
+  display: inline-block;
+  padding: 0.2rem 4.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.publ-slide-txtbox span:last-child {
+  padding: 0.2rem 4.15rem;
+  margin: 0rem;
+}
+
+/* design 파트입니다. */
+.design {
+  height: 76.8rem;
+}
+
+.design > h2 {
+  margin-bottom: 8rem;
+}
+
+.design-wrap {
+  height: 100%;
+}
+
+.design > .container {
+  width: 75.2rem
+}
+
+.design-left {
+  width: 42.8rem;
+  height: 34.2rem;
+  top: 5rem;
+}
+
+.design-moniter {
+  height: 100%;
+  width: 100%;
+}
+
+.design-moniter img {
+  height: 95%;
+  left: -8.1rem;
+}
+
+.design-container-left {
+  top: 1.5rem;
+  left: -1.6rem;
+  width: 34.6rem;
+  height: 24rem;
+}
+
+.design-slide-left img {
+  width: 100%;
+  height: auto;
+}
+
+.design-right {
+  top: 5rem;
+  right: -10rem;
+  width: 36rem;
+  height: 100%;
+  overflow: visible;
+}
+
+.design-wrapper-right {
+  width: 43rem;
+  height: 41rem;
+}
+
+.design-wrapper-right li {
+  height: 100%;
+}
+
+.design-slide-right {
+  height: 52rem;
+  width: 55rem;
+}
+
+.design-slide-right-txt {
+  font-size: 1.4rem;
+  margin-bottom: 2.6rem;
+}
+
+.design-slide-right-button a {
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+}
+
+.design-button-prev {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+}
+
+.design-button-next {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  margin-right: 11rem;
+}
+
+.design-slide-right-num {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.design-slide-right-tit {
+  font-size: 2.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.design-slide-right-txt {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.design-slide-right-desc {
+  margin-bottom: 0rem;
+}
+
+/* Life 파트입니다. */
+.life {
+}
+
+.life > .container {
+  width: 75.2rem;
+}
+
+.life-wrap {
+  width: 100%;
+  height: 44.5rem;
+}
+
+.life > .container > h2 {
+  padding: 2rem 0;
+  padding-left: 4rem;
+  margin-left: -4rem;
+  margin-top: 10rem;
+}
+
+.life-wrap > div > img {
+  left: 0rem;
+}
+
+/* Contact 파트입니다. */
+.contact .container {
+  width: 75.2rem;
+}
+
+.contact-wrap {
+  width: 75.2rem;
+  margin-top: 19rem;
+}
+
+.contact-wrap > p:nth-child(1) {
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.contact-wrap > p:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.contact-box ul li {
+  width: 19.8rem;
+  height: 19.8rem;
+}
+
+.contact-box ul li:first-child {
+  padding-top: 10%;
+}
+
+.contact-box ul li {
+  padding-top: 8.2%;
+}
+
+.contact-box ul li > p {
+  font-size: 2.4rem;
+}
+
+.contact-box ul li > a {
+  line-height: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+}
