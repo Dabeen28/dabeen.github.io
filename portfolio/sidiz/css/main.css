@@ -1,0 +1,1135 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+/* css 기본코드 */
+* { margin: 0; padding: 0; box-sizing: border-box }
+html { width: 100vw; font-size: 10px; margin: 0 auto }
+body { font-family: 'Noto Sans KR', 'Centra No2', sans-serif; font-size: 1.6rem; font-weight: 400; color: #000; overflow-x: hidden }
+ul, li { list-style: none }
+a { color: #000; text-decoration: none }
+img { vertical-align: middle; border: 0 }
+
+/* 공통 Class */
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.wrap {
+  position: relative;
+  display: block;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 122rem;
+  margin: 0 auto;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999999;
+}
+
+.modal-cont {
+  position: absolute;
+  left: 50%;
+  top:  50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 550px;
+  height: 300px;
+  background: #ffa2a2; 
+  border-radius: 5px;
+  border: 10px solid #fff;
+  padding:  50px;
+  box-shadow: 0px 0px 25px -15px #331616 inset;
+}
+
+.modal-cont p {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.modal-cont span {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+}
+
+.modal-cont button {
+  position: relative;
+  display: block;
+  margin-left: 40%;
+
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+
+  margin-top: 30px;
+  border: 0;
+  line-height: 35px;
+  text-align: center;
+  padding: 0 30px;
+  border-radius: 4px;
+
+  transition: background 0.3s, color 0.3s;
+}
+
+.modal-cont button:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* 화면 fixed */
+.fixed {
+  position: fixed;
+  display: block;
+  right: 4rem;
+  bottom: 4.4rem;
+  z-index: 999999;
+}
+
+.fixed span {
+  display: block;
+  width: auto;
+  height: 3.6rem;
+
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: #000;
+
+  border-radius: 10rem;
+  padding: 8px 16px;
+  box-shadow: 0px 4px 5px rgb(0 0 0 / 15%);
+  margin: 1rem;
+  background: #fff;
+}
+
+.fixed span img {
+  margin-right: 5px;
+}
+
+/* Header-Top Part */
+.header-top {
+  position: relative;
+  display: block;
+  height: auto;
+  border: 1px solid #bcbcbc;
+}
+
+.ht-main {
+  position: relative;
+  display: block;
+  height: 4rem;
+  width: calc(100% - 240px);
+  margin: 0 auto;
+  white-space: nowrap;
+
+}
+
+.ht-main-wrap {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.ht-search {
+  position: relative;
+  display: block;
+  float: left;
+  width: auto;
+  height: 4rem;
+  border-left: 1px solid #BCBCBC;
+}
+
+.ht-search:hover {
+  background: rgb(238, 238, 238);
+}
+
+.ht-search:hover .ht-txt {
+  color: #002bd2;
+}
+
+.ht-search.ht-search .ht-search-box {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.05em;
+  color: #000;
+  
+  padding: 0;
+  vertical-align: middle;
+  margin: 1rem 2rem;
+  width: 22rem;
+  border: none;
+  background: transparent;
+}
+
+.ht-search .ht-search-box:focus {
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.ht-search .ht-txt {
+  font-family: 'Centra No2';
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #000;
+
+  padding-right: 1.2rem;
+}
+
+.ht-search .ht-txt:hover {
+  color: rgb(0, 43, 210);
+}
+
+.ht-right {
+  display: block;
+  position: table-cell;
+  float: left;
+  height: 4rem;
+  border-left: 1px solid #BCBCBC;
+}
+
+.ht-right .ht-right-box {
+  position: relative;
+  display: block;
+  top: 0.2rem;
+}
+
+.ht-right > .ht-right-box > li {
+  float: left;
+}
+
+.ht-right-first {
+  margin-left: 3rem;
+}
+
+.ht-right > .ht-right-box > li > a{
+  position: relative;
+  display: block;
+
+  font-size: 1.3rem;
+  font-family: 'Noto Sans KR';
+  color: #000;
+
+  margin-left: 2rem;
+  margin-top: 0.9rem;
+}
+
+.ht-right > .ht-right-box > li > a:hover {
+  color: #002bd2;
+}
+
+.ht-right > .ht-right-box > li > a:hover > span > img {
+  opacity: 0;
+}
+
+.ht-right > .ht-right-box > li > a > span > img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+/* Header Part */
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #bcbcbc;
+  
+  font-family: "Malgun Gothic","Apple SD Gothic Neo",Dotum;
+  font-size: 1.2rem;
+  color: #807f83;
+}
+
+.header-box {
+  position: relative;
+  display: block;
+
+  width: calc(100% - 240px);
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  width: auto;
+  height: 2.5rem;
+  float: left;
+  padding-top: 1.8rem;
+}
+
+.logo > img {
+  display: block;
+  width: 8rem;
+  height: 2.4rem;
+}
+
+.header-nav {
+  position: relative;
+  display: block;
+  float: right;
+  width: auto;
+}
+
+.mainmenu {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.mainmenu > li {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 6rem;
+  float: left;
+
+  margin-left: 6rem;
+  padding-top: 2rem;
+
+  font-family: 'Centra No2';
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.mainmenu > li:hover {
+  color: #002bd2;
+}
+
+/* Header Menu */
+.header-nav-wrap {
+  position: absolute;
+  top: 10.1rem;
+  right: 0;
+  /* display: none; */
+  width: 100%;
+  min-width: 100rem;
+  height: 32rem;
+
+  font-family: "Malgun Gothic","Apple SD Gothic Neo",Dotum;
+  font-size: 1.2rem;
+  color: #807e83;
+
+  z-index: 9999;
+}
+
+.header-nav-li-active {
+  visibility: visible;
+}
+
+.header-nav-li-1 {
+  position: absolute;
+  visibility:hidden;
+  right: 37rem;
+  width: 16.5rem;
+  height: auto;
+  background: #282828;
+}
+
+.header-nav-li-1 > ul {
+  margin: 3rem;
+}
+
+.header-nav-li-1 > ul > li {
+  height: 1.8rem;
+  padding-bottom: 3rem;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.header-nav-li-1 > ul > li > a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header-nav-li-1 > ul > li > a:hover {
+  color: #1A59FF;
+}
+
+.header-nav-li-2 {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: auto;
+  height: 63rem;
+  background: #282828;
+  color: #fff;
+  visibility: hidden;
+}
+
+.header-nav-li-2 > dl {
+  position: relative;
+  display: block;
+  margin: 3rem 4rem 3rem 3rem;
+  height: 55rem;
+  padding: 0;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.2rem;
+}
+
+.header-nav-li-2 > dl > dt {
+  display: block;
+  width: 20rem;
+  height: auto;
+  float: left;
+  clear: left;
+  margin: 0;
+  padding: 0 2rem 2.4rem 0;
+
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-right: 1px solid #444;
+}
+
+.header-nav-li-2 > dl > dd {
+  display: block;
+  float: left;
+  height: 1.8rem;
+  margin-inline-start: 4rem;
+}
+
+.header-nav-li-2 > dl > dd > a {
+  font-family:'Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: #fff;
+  background: transparent;
+}
+
+.header-nav-li-2 > dl > dd > a:hover {
+  color:#1A59FF;
+}
+
+.header-nav-li-3 {
+  position: absolute;
+  right: 4rem;
+  display: block;
+  width: 19.5rem;
+  height: auto;
+  background: #282828;
+  color: #fff;
+  visibility: hidden;
+}
+
+.header-nav-li-3 > ul {
+  margin: 2rem;
+}
+
+.header-nav-li-3 > ul > li {
+  height: 1.8rem;
+  padding-bottom: 3rem;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.header-nav-li-3 > ul > li > a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header-nav-li-3 > ul > li > a:hover {
+  color: #1A59FF;
+}
+
+/* Slide Part */
+.slide {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.slide-sw {
+  position: relative;
+  display: block;
+  width: 168rem;
+  height: 90rem;
+  margin: 4rem auto 12rem auto;
+}
+
+.slide-sw-box-main {
+  position: relative;
+}
+
+.slide-txt-box {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: 5%;
+  background: #fff;
+}
+
+.slide-tit {
+  display: inline-block;
+  width: 39.3rem;
+
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 8rem;
+  color: #000;
+  letter-spacing: -0.3rem;
+}
+
+.slide-txt {
+  display: block;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 8rem;
+  line-height: 10.4rem;
+  font-weight: 600;
+  color: #000;
+  width: 46.5rem;
+  margin-top: 1rem;
+}
+
+.slide-txt-img-box {
+  position: relative;
+  height: 100%;
+}
+
+.blue-botton-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.slide-txt-img-box img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.slide-txt-img-box .slide-blue-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: url('../images/bluebutton.svg') no-repeat center;
+}
+
+.slide-img-txt {
+  position: absolute;
+  display: inline-block;
+  left: 25%;
+  margin-top: 6rem;
+  
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #999;
+  line-height: 2.1rem;
+}
+
+.slide-img-txt:hover {
+  color: #333;
+}
+
+.slide-img-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70%;
+  height: 90rem;
+
+  background: url('../images/slide-1.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.slide-img-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70%;
+  height: 90rem;
+
+  background: url('../images/slide-2.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.slide-img-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70%;
+  height: 90rem;
+
+  background: url('../images/slide-3.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.slide-img-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70%;
+  height: 90rem;
+
+  background: url('../images/slide-4.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.slide-img-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 70%;
+  height: 90rem;
+
+  background: url('../images/slide-5.jpg') no-repeat center;
+  background-size: auto;
+}
+
+.sw-prev-button {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  display: inline-block;
+  width: 7.8rem;
+  height: 2.6rem;
+  cursor: pointer;
+  background: url('../images/prevBr.png') no-repeat center;
+  z-index: 999;
+}
+
+.sw-prev-button:hover {
+  background: url('../images/prevBl.png') no-repeat center;
+}
+
+.sw-next-button {
+  position: absolute;
+  top: 80%;
+  left: 6%;
+  display: inline-block;
+  width: 7.8rem;
+  height: 2.6rem;
+  cursor: pointer;
+  background: url('../images/nextBr.png') no-repeat center;
+  z-index: 999;
+}
+
+.sw-next-button:hover {
+  background: url('../images/nextBl.png') no-repeat center;
+}
+
+
+/* Task Chair Part */
+.task-chair {
+  padding-top: 8rem;
+  border-bottom: 1px solid #000;
+}
+
+.task-chair-txt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 4.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.tc-tit {
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  color: #000;
+  float: left;
+}
+
+.task-chair-txt > a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #002bd2 !important;
+  float: right;
+  margin-top: 2rem;
+}
+
+.task-chair-txt > a:hover {
+  text-decoration: underline;
+}
+
+.task-chair-box {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: auto;
+}
+
+.box-tit {
+  display: inline-block;
+  width: 100%;
+  margin: 3rem 0 1rem 0;
+
+  font-family: 'Centra No2','Noto Sans KR';
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 6.5rem;
+  text-align: center;
+  color: #000;
+}
+
+.box-txt {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 8rem;
+  
+  font-family: 'Centra No2','Noto Sans KR';
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-align: center;
+  color: #000;
+}
+
+.task-chair-box-left {
+  display: inline-block;
+  float: left;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  width: 56rem;
+  box-sizing: content-box;
+}
+
+.task-chair-box-right {
+  display: inline-block;
+  float: left;
+  width: 56rem;
+  box-sizing: content-box;
+}
+
+.box-1-img {
+  width: auto;
+  height: 80rem;
+}
+
+.box-1-img:hover {
+  opacity: 0.8;
+}
+
+.box-2-img {
+  width: auto;
+  height: 68rem;
+}
+
+.box-2-img:hover {
+  opacity: 0.8;
+}
+
+.box-3-img {
+  width: auto;
+  height: 56rem;
+}
+
+.box-3-img:hover {
+  opacity: 0.8;
+}
+
+.box-4-img {
+  width: auto;
+  height: 46rem;
+}
+
+.box-4-img:hover {
+  opacity: 0.8;
+}
+
+/* Kids Chair Part */
+.kids-chair {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 8rem 0 12rem 0;
+}
+
+.kids-chair-box {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.kidbox-1-img {
+  width: 34rem;
+  height: 50rem;
+  background: url('../images/kids-1.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.kidbox-1-img:hover {
+  opacity: 0.8;
+}
+
+.kidbox-2-img {
+  width: 34rem;
+  height: 50rem;
+  background: url('../images/kids-2.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.kidbox-2-img:hover {
+  opacity: 0.8;
+}
+
+.kidbox-3-img {
+  width: 34rem;
+  height: 50rem;
+  background: url('../images/kids-3.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.kidbox-3-img:hover {
+  opacity: 0.8;
+}
+
+/* Article Part */
+.article {
+  display: block;
+  width: 100vw;
+  height: 110rem;
+  background: #f5f5f5;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+  
+
+.contact-1 {
+  position: relative;
+  display: block;
+  height: 6rem;
+}
+
+.contact-1-left {
+  display: inline-block;
+  width: 12%;
+  height: 6rem;
+  float: left;
+
+  font-family: 'Centra No2';
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #fff;
+
+  background: #002bd2;
+  padding-top: 1.8rem;
+}
+
+.contact-1-right {
+  display: inline-block;
+  float: left;
+  height: 6rem;
+  width: 88%;
+  background: #dde6ff;
+}
+
+.contact-1 {
+  margin-bottom: 8rem;
+}
+
+.contact-1-txtbox {
+  padding: 1.9% 1.5% 0 25%;
+}
+
+.contact-1-txt {
+  color: #000;
+  font-weight: 600;
+}
+
+.contact-1-txt:hover {
+  text-decoration: underline;
+}
+
+.contact-1-date {
+  font-family: 'Centra No2';
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #555;
+  margin-left: 1rem;
+}
+
+.contact-1-all {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  display: block;
+  line-height: 1.8rem;
+  text-decoration: underline;
+  float: right;
+}
+
+.contact-1-all:hover {
+  color: #002bd2;
+}
+
+.contact-2 {
+  display: inline-block;
+  width: 100%;
+  height: 30.8rem;
+  margin-bottom: 10rem;
+}
+
+.contact-2-top {
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.insta-logo {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  background: url('../images/pc_insta_profile.png') no-repeat center;
+  background-size: contain;
+}
+
+.insta-name {
+  display: inline-block;
+  float: left;
+  font-family: 'Centra No2';
+  font-size: 2rem;
+  color: #000;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-2-bottom {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.contact-2-bottom a img {
+  width: 22.8rem;
+  height: 22.8rem;
+}
+
+.contact-3-left {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 39rem;
+}
+
+.contact-3-top {
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-blog {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+  background: url('../images/blog.png') no-repeat center;
+}
+
+.contact-blog-txt {
+  position: relative;
+  display: inline-block;
+  font-family: 'Centra No2';
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  top: -.7rem;
+}
+
+.contact-3-tit {
+  display: inline-block;
+  width: 90%;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.contact-3-txt {
+  display: inline-block;
+  width: 39rem;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.contact-3-more {
+  font-family: 'Centra No2';
+  color: #002bd2;
+  text-decoration: underline;
+}
+
+.contact-3-right {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 62rem;
+  height: 35rem;
+  background: url('../images/blogMainImg.jpg') no-repeat center;
+}
+
+/* Footer Part */
+.footer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 100% !important;
+  padding: 6rem 0;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 4.4rem;
+  margin-bottom: 4rem;
+}
+
+.ft-logo {
+  position: absolute;
+  left: 0;
+  display: block;
+}
+
+.ft-icon {
+  position: absolute;
+  display: block;
+  right: 0;
+}
+
+.ft-icon a {
+  margin-left: 2rem;
+}
+
+.ft-icon a img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 40.4rem;
+  color: #fff;
+}
+
+.footer-bottom > ul {
+  display: inline-block;
+  float: left;
+  margin-right: 6.7rem;
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+
+.footer-bottom > ul:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom > ul > li {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.footer-bottom > ul > li > a {
+  color: #fff;
+}
+
+.fb-2 > li > a {
+  text-decoration: underline;
+}
+
+.fb-2 > li:nth-child(3) {
+  margin-bottom: 9.5rem;
+}
+
+.fb-2 > li:nth-child(3) > a {
+  text-decoration: none;
+}
+
+.fb-2 li:nth-child(1),
+.fb-3 li:nth-child(1) {
+  margin-bottom: 3.5rem;
+}
+
+.fb-3 > li:nth-child(1) > a {
+  color: #1A59FF !important;
+  text-decoration: underline;
+}
+
+.list-tit {
+  font-family: 'Centra No2','Noto Sans KR';
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  height: 4.4rem;
+  margin-top: 5.5rem;
+}
+
+.list-txt {
+  font-family: 'Centra No2','Noto Sans KR';
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem !important;
+}
+
+.fb-6-num {
+  font-family: 'Centra No2';
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+}
+
+.fb-span > span {
+  color: #807f83;
+}
