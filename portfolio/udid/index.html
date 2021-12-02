@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDID - U Dream I Do!</title>
+
+  <!-- jquery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- html5shiv -->
+  <!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
+  <!-- vender-prefix -->
+  <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  <!-- <script src="js/respond.min.js"></script> -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="js/swiper/swiper.min.css">
+  <script src="js/swiper/swiper.min.js"></script>
+
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fontello/css/fontello.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head> 
+
+<body>
+
+  <!-- modal창 -->
+  <div class="modal">
+    <div class="modal-cont">
+      <p>
+        본 사이트는 포트폴리오용 사이트로 <br>
+        리소스는 원저작자에게 있습니다.
+      </p>
+      <span>HTML5, CSS3, javaScript & jQuery로 제작되었으며,<br>
+        크롬에 최적화 되어있습니다.</span>
+      <button>닫기</button>
+    </div>
+  </div>
+
+  <div class="wrap"> 
+    <!-- Header-top-fixed Part -->
+    <div class="go-top">
+      <i class="icon-up-open-mini"></i>
+      <span>TOP</span>
+    </div>
+
+    <!-- Header Part -->
+    <header class="header">
+      <a href="#" class="logo"></a>
+      <nav class="menu">
+        <div class="container">
+          <ul class="gnb clearfix">
+            <li class="mainmenu one"><a href="#">About UDID</a></li>
+            <li class="mainmenu"><a href="#">서비스 포트폴리오</a></li>
+            <li class="mainmenu"><a href="#">주요 지표</a></li>
+            <li class="mainmenu"><a href="#">HISTORY</a></li>
+            <li class="mainmenu"><a href="#">경영이념/핵심가치/인재상</a></li>
+            <li class="mainmenu"><a href="#">주요 인증현황</a></li>
+            <li class="mainmenu"><a href="#">NEWS</a></li>
+            <li class="mainmenu"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--// Header Part -->
+
+    <!-- Slide Part -->
+    <div class="slide">
+      <div class="swiper-container sw-slide">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide-1">
+            <class class="container">
+
+              <div class="slide-txt-box">
+                <span class="slide-tit">
+                  <strong>PG</strong> Beyond <strong>PG</strong>
+                </span>
+                <p class="slide-txt">
+                  <strong>결제</strong>에 이르는 길까지<br>
+                  혁신하는 <strong>남 다른 PG</strong>
+                </p>
+                <p class="slide-afterbox"></p>
+                <span class="slide-udid">
+                  <strong>UDID</strong>
+                </span>
+              </div>
+            </class>
+          </div>
+
+          <div class="swiper-slide slide-2">
+            <div class="container">
+              <div class="slide-txt-box">
+                <span class="slide-tit">
+                  <strong>No. 1</strong> Creator
+                </span>
+                <p class="slide-txt">
+                  <strong>페이앱, 블로그페이</strong>를<br>
+                  만들고 성공한
+                </p>
+                <p class="slide-afterbox"></p>
+                <span class="slide-udid">
+                  <strong>UDID</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide-3">
+            <div class="container">
+              <div class="slide-txt-box">
+                <span class="slide-tit">
+                  <strong>Another</strong> Rocket
+                </span>
+                <p class="slide-txt">
+                  <strong>프로셀, 유디페이</strong>로<br>
+                  대약진하는
+                </p>
+                <p class="slide-afterbox"></p>
+                <span class="slide-udid">
+                  <strong>UDID</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide-4">
+            <div class="container">
+              <div class="slide-txt-box">
+                <span class="slide-tit">
+                  Magic <strong>Castle</strong>
+                </span>
+                <p class="slide-txt">
+                  <strong>중단없는 도전</strong>으로<br>
+                  철옹성을 준비하는
+                </p>
+                <p class="slide-afterbox"></p>
+                <span class="slide-udid">
+                  <strong>UDID</strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!--// Slide Part -->
+
+    <!-- Banner Part -->
+    <div class="banner">
+      <div class="container">
+        <p class="banner-txt">
+          <strong>U Dream I Do</strong>
+          꿈꾸세요. 저희가 이뤄 드립니다.
+        </p>
+      </div>
+    </div>
+    <!--// Banner Part -->
+
+    <!-- Service Portfolio Part -->
+    <div class="service-p">
+      <div class="container">
+        <div class="service-p-left">
+          <span>Service portfolio</span>
+          <h2><b>서비스</b> 포트폴리오</h2>
+          <p>
+            UDID는 단순한 PG사가 아닙니다.<br>
+            PG 이상의 가치를 무수한 No.1 서비스들로 입증합니다.
+          </p>
+          <div class="sw-button">
+            <button class="sw-button-prev"><i class="ico icon-left-open"></i></button>
+            <button class="sw-button-next"><i class="ico icon-right-open"></i></button>
+          </div>
+        </div>
+        <div class="service-p-right">
+          <div class="swiper-container sw-service-p">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-1">
+                </span>
+                <span class="sb-number">1</span>
+                <p class="sv-txt">
+                  <b>No.1 무료 간편 쇼핑 플랫폼</b><br>
+                  시장을 만들고 키워온<br>
+                  No.1 SNS 주문서 솔루션.<br>
+                  웹/모바일 반응형 쇼핑몰에 매출을<br>
+                  늘리고 비용을 줄이는 15종 이상의<br>
+                  부가서비스까지 무료 제공!
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-2">
+                </span>
+                <span class="sb-number">2</span>
+                <p class="sv-txt">
+                  일반적인 쇼핑몰 결제와 더불어,<br>
+                  오프라인 결제는 물론, 원걸이에<br>
+                  떨어져 있는 고객에게 SMS나 카톡으로<br>
+                  결제요청을 해 간편하게 결제를<br>
+                  받을 수 있는 <b>신개념 모바일 결제 솔루션</b>
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-3">
+                </span>
+                <span class="sb-number">3</span>
+                <p class="sv-txt">
+                  <b>중대형몰을 위한 더욱 정교한<br>
+                    무료 쇼핑몰 솔루션</b><br>
+                  쇼핑몰 사이즈와 관리 복잡도가<br>
+                  높아질수록 더욱 빛을 발하는 프로셀!
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-4">
+                </span>
+                <span class="sb-number">4</span>
+                <p class="sv-txt">
+                  <b>무료로 콜백문자 자동발송, 대량문자<br>
+                    간편발송이 가능한</b> 앱 서비스<br>
+                  페이앱, 사이다페이 회원은<br>
+                  즉시 무료 이용 가능
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-5">
+                </span>
+                <span class="sb-number">5</span>
+                <p class="sv-txt">
+                  연동형 결제방식, 웹과 앱을 이용한 즉시<br>
+                  대면/비대면 결제, 다양한 결제/부가<br>
+                  API의 자유로운 연동을 파격적인<br>
+                  조건으로 이용 가능한 혁신적인<br>
+                  통합결제 서비스
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-6">
+                </span>
+                <span class="sb-number">6</span>
+                <p class="sv-txt">
+                  국내 최대 규모의 <b>컴퓨터 A/S<br>
+                    네트워크 플랫폼</b><br>
+                  출장 A/S, 원격A/S, 기업유지보수.<br>
+                  PC 무료검사 등<br>
+                  All in One 서비스 제공
+                </p>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-7">
+                </span>
+                <span class="sb-number">7</span>
+                <p class="sv-txt">
+                  <b>무료 결제연동 API 서비스</b><br>
+                  소스코드 한줄 연동.<br>
+                  모든 결제 시나리오 지원.<br>
+                  안정적인 서비스 운영 및 보안.<br>
+                  무료 통계 서비스 제공
+                </p>
+                <span class="sv-txt-family">패밀리사이트</span>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-8">
+                </span>
+                <span class="sb-number">8</span>
+                <p class="sv-txt">
+                  압도적인<b>No.1 무료 임대관리 솔루션</b><br>
+                  장부나 엑셀 대신 임대관리 현황을<br>
+                  스마트폰과 PC로 언제 어디서나<br>
+                  관리할 수 있는 스마트 툴
+                </p>
+                <span class="sv-txt-family">패밀리사이트</span>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+              <div class="swiper-slide sw-slide-service-p">
+                <span class="sv-img-box">
+                  <img src="images/sec1_logo.png" class="sv-img-9">
+                </span>
+                <span class="sb-number">9</span>
+                <p class="sv-txt">
+                  단비 같은 월세 카드결제 서비스<br>
+                  임대인의 동의가 필요 없는<br>
+                  <b>월세/관리비 신용카드 결제서비스</b>
+                  <span class="sv-txt-purple">
+                    결제와 정산을 UDID 페이앱에서 대행하며,<br>
+                    거래안전을 보증합니다.
+                  </span>
+                </p>
+                <span class="sv-txt-family">패밀리사이트</span>
+                <dd class="sv-arrow">
+                  <span class="line"></span>
+                  <span class="line-go"></span>
+                </dd>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// Service Portfolio Part -->
+
+    <!-- Main Index -->
+    <div class="main-index">
+      <div class="container">
+        <div class="mindex-header">
+          <h2>주요지표</h2>
+          <span>(2020년 기준)</span>
+        </div>
+
+        <div class="mindex-box clearfix">
+          <div class="mindex-box-left clearfix">
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                누적 결제금액
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-3 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">3</b>조원
+              </span>
+            </div>
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                누적 결제건수
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-5 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">5,000</b>만건
+              </span>
+            </div>
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                누적 투자유치
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-45 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">45</b>억원
+              </span>
+            </div>
+          </div>
+
+          <div class="mindex-box-right clearfix">
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                연 매출액
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-300 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">300</b>억원
+              </span>
+            </div>
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                자본금
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-20 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">20</b>억원
+              </span>
+            </div>
+            <div class="mindex-txtbox">
+              <span class="mindex-txtbox-top">
+                임직원
+              </span>
+              <span class="mindex-txtbox-bottom">
+                <b class="number-counter-100 aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">100</b>여명
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mindex-graph" data-aos="fade-up" data-aos-duration="800">
+          <div class="mindex-graph-left">
+            <span class="mindex-graph-txt">연도별 결제금액 (억원)</span>
+            <img src="images/sec2_graph1.png">
+          </div>
+          <div class="mindex-graph-right">
+            <span class="mindex-graph-txt">연도별 결제건수 (만건)</span>
+            <img src="images/sec2_graph2.png">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!--// Main Index -->
+
+    <!-- History Part -->
+    <div class="history">
+      <div class="container">
+        <div class="history-txt">
+          <h2 data-aos="fade-right" data-aos-duration="1000">HISTORY</h2>
+        </div>
+        <div class="history-bottom">
+          <div data-aos="fade-left" data-aos-duration="1000" class="swiper-container sw-history">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide sw-history-list-1">
+                <h3 class="year-red">2021</h3>
+                <p class="year-p-first"><b>고용노동부 강소기업</b> 선정</p>
+                <p><b>하이서울인증기업</b> 선정</p>
+                <p>페이앱 누적거래액 <b>3조원</b> 돌파</p>
+                <p>페이앱 누적결제건수 <b>5,000만건</b> 돌파</p>
+                <p>페이앱 머니투데이 <b>"서비스고객만족 대상"</b> 수상</p>
+              </div>
+
+              <div class="swiper-slide sw-history-list">
+                <h3 class="year">2020</h3>
+                <p class="year-p-first"><b>페이앱-롯데백화점 업무 제휴 체결</b></p>
+                <p>무료로 콜백문자 자동발송, 대량 문자 간편발송이 가능한
+                  앱 서비스 <b>오토메세지</b> 출시
+                </p>
+                <p>더욱 정교한 무료 쇼핑몰 솔루션 <b>프로셀</b> 출시</p>
+                <p><b>국내 전 카드시 PG 특약 체결</b></p>
+                <p><b>네이버페이</b> 제휴 및 <b>결제수단</b> 오픈</p>
+              </div>
+
+              <div class="swiper-slide sw-history-list">
+                <h3 class="year">2019</h3>
+                <p class="year-p-first">통신과금서비스제공업 등록</p>
+                <p><b>카카오페이</b> 제휴 및 <b>결제수단</b> 오픈
+                </p>
+                <p>페이앱 누적거래액 <b>2조원</b> 돌파</p>
+                <p>페이앱 누적결제건수 <b>4,000만건</b> 돌파</p>
+                <p><b>ISMS 인증 획득</b></p>
+              </div>
+
+              <div class="swiper-slide sw-history-list">
+                <h3 class="year">~ 2017</h3>
+                <p class="year-p-first">페이앱 누적거래 <b>1조원</b> 돌파</p>
+                <p>페이앱 누적결제건수 <b>2,000만건</b> 돌파</p>
+                <p><b>국내 최초 삼성페이 폰2폰 결제 상용화</b></p>
+                <p>전자금융업 등록 (PG 및 ESCROW)</p>
+                <p>SNS 주문서 솔루션 <b>블로그페이</b> 출시</p>
+                <p><b>기술혁신형 중소기업</b> 등록 (이노비즈)</p>
+                <p>특수부가통신 사업자 등록</p>
+                <p><b>기업부설연구소</b> 등록</p>
+                <p>통신판매업 등록</p>
+              </div>
+
+              <div class="swiper-slide sw-history-list">
+                <h3 class="year">2012</h3>
+                <p class="year-p-first"><b>페이앱</b>출시<br>
+                  <b>⇀ 국내 최초 SMS 링크결제 솔루션</b>
+                </p>
+                <p><b>UDID 설립</b></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// History Part -->
+
+    <!-- Management Part -->
+    <div class="managment">
+      <div class="container">
+        <div class="ma-txtbox">
+          <h2 data-aos="zoom-out" data-aos-duration="600">경영이념 / 핵심가치</h2>
+          <span>남 다른 혁신으로 세상을 이롭게 하는 가치기업</span>
+        </div>
+        <div class="ma-bottom clearfix">
+
+          <div class="ma-bottom-item" data-aos="zoom-out" data-aos-duration="600">
+            <span class="mb-item-1">
+              <div class="mb-item-imgbox-1">
+                <img src="images/icon.png">
+              </div>
+            </span>
+            <p class="mb-item-tit">
+              <b>U</b>niqueness <span>유일함</span>
+            </p>
+            <p class="mb-item-txt">
+              UDID 특유의 고유한<br>
+              사업모델로 승부,<br>
+              하청형/복제형 사업 지양
+            </p>
+          </div>
+
+          <div class="ma-bottom-item" data-aos="zoom-out" data-aos-duration="600">
+            <span class="mb-item-2">
+              <div class="mb-item-imgbox-2">
+                <img src="images/icon.png">
+              </div>
+            </span>
+            <p class="mb-item-tit">
+              <b>D</b>ifferentiation <span>차별화</span>
+            </p>
+            <p class="mb-item-txt">
+              '나음'보다는 '다름'추구,<br>
+              'One of Theme'이 아닌<br>
+              'Only One'지향
+            </p>
+          </div>
+
+          <div class="ma-bottom-item" data-aos="zoom-out" data-aos-duration="600">
+            <span class="mb-item-3">
+              <div class="mb-item-imgbox-3">
+                <img src="images/icon.png">
+              </div>
+            </span>
+            <p class="mb-item-tit">
+              <b>I</b>nnovation <span>혁신성</span>
+            </p>
+            <p class="mb-item-txt">
+              게임의 법칙을<br>
+              바꾸는 기업,<br>
+              'Zero to One' 혁신 지향
+            </p>
+          </div>
+
+          <div class="ma-bottom-item" data-aos="zoom-out" data-aos-duration="600">
+            <span class="mb-item-4">
+              <div class="mb-item-imgbox-4">
+                <img src="images/icon.png">
+              </div>
+            </span>
+            <p class="mb-item-tit">
+              <b>D</b>oing <span>실행</span>
+            </p>
+            <p class="mb-item-txt">
+              신속한 의사결정,<br>
+              즉각적인 실행, 시장의 피드백에<br>
+              최적 대응하는 사후관리
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// Management Part -->
+
+    <!-- People Part -->
+    <div class="people">
+      <div class="container">
+        <div class="people-txtbox">
+          <h2 data-aos="zoom-out" data-aos-duration="600">인재상</h2>
+          <span>리크루팅은 주로 [잡코리아], [사람인]을 통해 진행됩니다.</span>
+        </div>
+        <ul class="people-list clearfix">
+          <li>주인의식</li>
+          <li>승부근성</li>
+          <li>열정</li>
+          <li>실행력</li>
+          <li>전략적 사고</li>
+        </ul>
+      </div>
+    </div>
+    <!--// People Part -->
+
+    <!-- Mainreport Part -->
+    <div class="main-report">
+      <div class="container">
+        <div class="main-report-header">
+          <h2 data-aos="zoom-out" data-aos-duration="600">주요 인증현황</h2>
+        </div>
+        <div class="main-report-bottom clearfix" data-aos="fade-up" data-aos-duration="800">
+
+          <div class="main-report-txtbox">
+            <span class="mr-txt1">PG</span>
+            <span class="mr-txt2">전자지급결제대행업 등록번호</span>
+            <span class="mr-txt3">02 - 004 - 00096</span>
+          </div>
+
+          <div class="main-report-txtbox">
+            <span class="mr-txt1">ESCROW</span>
+            <span class="mr-txt2">결제대금예치업 등록번호</span>
+            <span class="mr-txt3">02 - 006 - 00035</span>
+          </div>
+
+          <div class="main-report-txtbox">
+            <span class="mr-txt1">휴대폰결제</span>
+            <span class="mr-txt2">통신과금서비스 제공업 등록</span>
+            <span class="mr-txt3">등록번호 058</span>
+          </div>
+
+          <div class="main-report-txtbox">
+            <span class="mr-txt1">ISMS</span>
+            <span class="mr-txt2">정보보호 관리체계 인증 획득</span>
+            <span class="mr-txt3">ISMS 19-016</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// Mainreport Part -->
+
+    <!-- News Part -->
+    <div class="news">
+      <div class="container">
+        <div class="news-txtbox">
+          <h2 data-aos="zoom-out" data-aos-duration="600">NEWS</h2>
+        </div>
+        <div class="news-bottom clearfix" data-aos="fade-up" data-aos-duration="800">
+
+          <div class="news-itembox-open">
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, 페이앱 '2021소비자가 뽑은
+                  서비스 고객만족대상'수상
+                </h3>
+                <span>2021. 09. 08</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, '헬스포트' 전략적 투자로 디지털 헬스케어 사업 진출
+                </h3>
+                <span>2021. 07. 27</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>개발 및 연구 중심기업 유디아이디, 고용노동부 강소기업 선정
+                </h3>
+                <span>2021. 06. 07</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="news-itembox-hidden1">
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, 페이앱 '2021소비자가 뽑은
+                  서비스 고객만족대상'수상
+                </h3>
+                <span>2021. 09. 08</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, '헬스포트' 전략적 투자로 디지털 헬스케어 사업 진출
+                </h3>
+                <span>2021. 07. 27</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>개발 및 연구 중심기업 유디아이디, 고용노동부 강소기업 선정
+                </h3>
+                <span>2021. 06. 07</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="news-itembox-hidden2">
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, 페이앱 '2021소비자가 뽑은
+                  서비스 고객만족대상'수상
+                </h3>
+                <span>2021. 09. 08</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>유디아이디, '헬스포트' 전략적 투자로 디지털 헬스케어 사업 진출
+                </h3>
+                <span>2021. 07. 27</span>
+              </a>
+            </div>
+            <div class="news-itembox">
+              <a href="#" class="news-item">
+                <h3>개발 및 연구 중심기업 유디아이디, 고용노동부 강소기업 선정
+                </h3>
+                <span>2021. 06. 07</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="news-bt-txt">
+          <span class="news-more">더보기<i class="icon-down-open-mini"></i></span>
+        </div>
+      </div>
+    </div>
+    <!--// News Part -->
+
+    <!-- Contact Part -->
+    <div class="contact">
+      <div class="container">
+        <div class="contact-tit">
+          <h2 data-aos="zoom-out" data-aos-duration="600">CONTACT</h2>
+        </div>
+        <div class="contact-txtbox-top">
+          <ul class="contact-txtbox">
+            <li class="contact-txtbox-list">
+              <b class="ct-list-tit-b">주소</b>
+              <p class="ct-list-txt">
+                [08389] 서울특별시 구로구<br>
+                디지털로 26길 61 에이스하이엔드타워 2차 12층 1202호
+              </p>
+            </li>
+            <li class="contact-txtbox-list">
+              <b class="ct-list-tit">제휴문의</b>
+              <p class="ct-list-txt">
+                <a href="#" class="address">udidsales@udid.co.kr</a><br>
+                <span class="small">평일의 경우 최대 3일 금요일의 경우 최대 다음주 수요일까지 답변을 드립니다.</span>
+              </p>
+            </li>
+            <li class="contact-txtbox-list">
+              <b class="ct-list-tit">고객센터</b>
+              <p class="ct-list-txt">
+                <a href="#">1800 - 3772</a>
+              </p>
+            </li>
+            <li class="contact-txtbox-list">
+              <b class="ct-list-tit-b">팩스</b>
+              <p class="ct-list-txt">
+                02 - 6008 - 9760
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-imgbox" data-aos="fade-up" data-aos-duration="800">
+          <a href="#" class="contact-img">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--// Contact Part -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-txt">
+          <h2 class="footer-h2">(주)유디아이디</h2>
+          <span>[08389] 서울특별시 구로구 디지털로 26길 61 에이스하이엔드타워 2차 1202호</span>
+          <div class="footer-txtbox clearfix">
+            <ul class="footer-ul clearfix">
+              <li><b>대표</b> 정재훈</li>
+              <li><b>사업자 등록번호</b> 113-86-56537</li>
+              <li><b>통신판매업 신고번호</b> 제 2012-서울구로-0239호</li>
+              <li><b>고객센터</b> 1800-3772</li>
+              <li><b>팩스</b> 02-6008-9760</li>
+              <li><b>이메일</b><a href="#">udidsales@udid.co.kr</a></li>
+            </ul>
+            <ul class="footer-ul clearfix">
+              <li><b>PG</b> 전자지급결제대행업 등록번호 02-004-00096</li>
+              <li><b>ESCROW</b> 결제대금예치업 등록번호 02-006-00035</li>
+              <li><b>통신과금서비스제공업</b> 등록번호 058</li>
+              <li><b>ISMS</b> 정보보호 관리체계 인증 19-016</li>
+            </ul>
+            <p class="last">Copyright © 2012 UDID CORP. All rights reserved. Inspired by Charlie C</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
