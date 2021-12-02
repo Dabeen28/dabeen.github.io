@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투어2000_Re:design</title>
+  <link rel="shortcut icon" href="../tour2000/favicon.ico">
+
+  <!-- AOS 효과 입니다. -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../buchen/jquery.min.js"></script>
+</head>
+<body>
+
+  <style>
+    .wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container{
+      position: relative;
+      width: 1920px;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    .gotop {
+      position: fixed;
+      bottom: 15%;
+      right: 17%;
+      background: rgba(68, 152, 255, 0.5);
+      color: #000;
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      border: 1px solid rgb(255, 255, 238);
+      z-index: 999;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .gotop:hover {
+      color: #fff;
+      background-color: rgb(50, 142, 255);
+    }
+
+    img {
+      object-fit: cover;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .container img:nth-child(2) {
+      top: 0px;
+    }
+
+    .container img:nth-child(3) {
+      top: 413px;
+    }
+
+    .container img:nth-child(4) {
+      top: 935px;
+    }
+
+    .container img:nth-child(5) {
+      top: 1610px;
+    }
+
+    .container img:nth-child(6) {
+      top: 2480px;
+    }
+
+    .container img:nth-child(7) {
+      top: 3250px;
+    }
+
+  </style>
+
+  <div id="wrap">
+    <button class="gotop">
+      <span>TOP</span>
+    </button>
+
+    <div class="container">
+      <img src="tour2000_background.png" alt="부천국제페스티벌">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" src="tour2000_mainbanner.png" title="tour2000_background">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000" src="tour2000_search.png" title="tour2000_search">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" src="tour2000_1.png" title="tour2000_list1">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" src="tour2000_2.png" title="tour2000_list2">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" src="tour2000_3.png" title="tour2000_list3">
+      <img data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500" src="tour2000_4.png" title="tour2000_list4">
+    </div>
+  </div>
+  <script>
+
+  let gotop = $('.gotop');
+
+      $(gotop).click(function (event) {
+          $('html, body')
+              .stop()
+              .animate({
+                  scrollTop: 0
+              }, 600);
+      });
+      
+  AOS.init();
+    
+
+  </script>
+
+</body>
+</html>

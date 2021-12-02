@@ -12,7 +12,7 @@
     font-size: 10vw;
     line-height: 3rem;
     top: 2.7rem;
-    left: 0rem;
+    left: -2rem;
   }
   
   /* header 영역입니다. */
@@ -350,8 +350,26 @@
     display: none;
   }
 
+  .modal-cont {
+    width: 35rem;
+    height: 48rem;
+  }
+  
+  .modal-imgbox {
+    height: 85%;
+  }
+  
+  .modal-imgbox img {
+    height: 98rem;
+  }
 
+  .modal-textbox {
+    height: 15%;
+  }
 
+  .modal-cont button {
+    right: 37%;
+  }
 
 
 

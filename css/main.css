@@ -54,9 +54,9 @@ html {
 }
 
 /* 스크롤바의 width */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background-color: #619ab4;
-}
+} */
 
 /* 스크롤바의 전체 배경색 */
 ::-webkit-scrollbar-thumb {
@@ -776,7 +776,7 @@ h2 {
   width: 100%;
   height: 0.1rem;
   background: #FFDCDC;
-  animation: twinkle 3s ease-in-out infinite;
+  animation: twinkle 1.5s ease-in-out infinite;
 }
 
 @keyframes twinkle {
@@ -1218,6 +1218,10 @@ h2 {
   height: 51rem;
 }
 
+.design-moniter::before:hover {
+  visibility: hidden;
+}
+
 .design-moniter img {
   position: absolute;
   left: -2rem;
@@ -1233,8 +1237,7 @@ h2 {
   display: block;
   width: 58.1rem;
   height: 36.2rem;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .design-container-left::-webkit-scrollbar {
@@ -1332,7 +1335,7 @@ h2 {
 .design-slide-right-txt {
   font-size: 1.6rem;
   font-weight: 400;
-  margin-bottom: 5.6rem;
+  margin-bottom: 3.6rem;
   color: #fff;
   line-height: 2.9rem;
   text-align: justify;
@@ -1385,6 +1388,72 @@ h2 {
   color: #333;
 }
 
+/* design modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999999999999;
+  overflow: ;
+}
+
+.modal-cont {
+  position: absolute;
+  left: 50%;
+  top:  50%;
+  transform: translate(-50%, -50%);
+
+  width: 115rem;
+  height: 66rem;
+  background: #fff; 
+  border-radius: 5px;
+  border: 10px solid #ffa2a2;
+  box-shadow: 0px 0px 25px -15px #331616 inset;
+  overflow: visible;
+}
+
+.modal-imgbox {
+  width: 100%;
+  height: 64rem;
+  overflow-y: scroll;
+}
+
+.modal-imgbox img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+}
+
+.modal-cont button {
+  position: absolute;
+  top: -7rem;
+  right: 0rem;
+  display: block;
+
+  background: #ffa2a2;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  border: 0;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 1.6rem 1.8rem;
+  border-radius: 4px;
+
+  transition: background 0.3s, color 0.3s;
+}
+
+.modal-cont button:hover {
+  background: #111;
+  color: #fff;
+}
 
 /* life 파트입니다. */
 .life {

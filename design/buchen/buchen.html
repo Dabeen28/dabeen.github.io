@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부천국제판타스틱영화제_Re:design</title>
+  <link rel="shortcut icon" href="../buchen/favicon.ico">
+
+  <!-- AOS 효과 입니다. -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../buchen/jquery.min.js"></script>
+</head>
+<body>
+
+  <style>
+    .wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container{
+      position: relative;
+      width: 1920px;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    .gotop {
+      position: fixed;
+      bottom: 15%;
+      right: 17%;
+      background: rgba(0, 21, 46, 0.5);
+      color: #000;
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      border: 1px solid rgb(255, 255, 238);
+      z-index: 999;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .gotop:hover {
+      color: rgb(0, 21, 46);
+      background-color: #fff;
+    }
+
+    img {
+      object-fit: cover;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .container img:nth-child(3) {
+      top: 720px;
+    }
+
+    .container img:nth-child(4) {
+      top: 1620px;
+    }
+
+    .container img:nth-child(5) {
+      top: 3020px;
+    }
+
+    .container img:nth-child(6) {
+      top: 4200px;
+    }
+
+    .container img:nth-child(7) {
+      top: 5330px;
+    }
+
+  </style>
+
+  <div id="wrap">
+    <button class="gotop">
+      <span>TOP</span>
+    </button>
+
+    <div class="container">
+      <img src="Buchen_background.jpg" alt="부천국제페스티벌">
+      <img data-aos="fade-down" data-aos-duration="1500" src="Buchen_slide.png" alt="">
+      <img data-aos="fade-down" data-aos-duration="1500" src="Buchen_program.png" alt="">
+      <img data-aos="fade-down" data-aos-duration="1500" src="Buchen_event.png" alt="">
+      <img data-aos="fade-down" data-aos-duration="1500" src="Buchen_webzine.png" alt="">
+      <img data-aos="fade-down" data-aos-duration="1500" src="Buchen_sns.png" alt="">
+      <img data-aos="fade-down" data-aos-duration="1500"  src="Buchen_notice.png" alt="">
+    </div>
+  </div>
+  <script>
+
+  let gotop = $('.gotop');
+
+      $(gotop).click(function (event) {
+          $('html, body')
+              .stop()
+              .animate({
+                  scrollTop: 0
+              }, 600);
+      });
+      
+  AOS.init();
+    
+
+  </script>
+
+</body>
+</html>
