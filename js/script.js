@@ -1,19 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
+    // 벚꽃 효과 입니다.
+    $(window).load(function () {
+        $('visual').sakura();
+    });
 
-  // modal 닫기
-	$('.modal').click(function () {
-		$(this).fadeOut();
-	});
+    // gotop 클릭 시 상단으로 가는 코드입니다.
+    let header = $('.header');
+    let gotop = $('.gotop');
 
-  // 화면 내 모든 a링크 href="#"시 상단으로 이동하는 이벤트 막기
-  $(document).on('click', 'a[href="#"]', function(e){
-    e.preventDefault();
-  });
-
-  // go-top 메뉴
-  let gotop = $('.go-top-fixed');
-  
     $(gotop).click(function (event) {
         $('html, body')
             .stop()
@@ -22,45 +17,134 @@ $(document).ready(function() {
             }, 600);
     });
 
+    // gotop 코드 및 header색상 변경 코드입니다.
     $(window).scroll(function () {
-      let scY = $(window).scrollTop();
-      if (scY >= 400) {
-          $(gotop).fadeIn();
-      } else {
-          $(gotop).fadeOut();
-      }
+        let scY = $(window).scrollTop();
+        if (scY >= 400) {
+            $(gotop).addClass('gotop-active');
+            $(header).css("background-color", "white");
+            $(header).css("box-shadow", "0px 5px 10px rgb(255, 218, 218)");
+        } else {
+            $(gotop).removeClass('gotop-active');
+            $(header).css("background-color", "transparent");
+            $(header).css("box-shadow", "none");
+
+        }
     });
 
-    // 상단 slide swiper
-    let swiper_slidebox = new Swiper('.slide-box', {
-        effect: 'fade',
-        loop: true,
-        autoplay: true,
-        pagination: {
-          el : '.slide-box-pg',
-          type: "fraction",
+    // 퍼블리싱 영역 슬라이드 입니다.
+    let sw_publ = new Swiper('.publ-container', {
+        direction: 'horizontal',
+        effect: 'slide',
+        slidesPerView: "auto",
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1,
+        spaceBetween: 0,
+        pauseOnMouseEnter: true,
+        // autoplay: true,
+        navigation: {
+            prevEl: '.publ-button-prev',
+            nextEl: '.publ-button-next'
         },
+        scrollbar: {
+            el: ".publ-scrollbar",
+            hide: false,
+            draggable: true
+        }
     });
 
-    // 고객님 안녕하세요! slide-bow swiper
-    let swiper_hi = new Swiper('.hi-sw', {
-      effect: 'slide',
-      clickable: true,
-      slidesPerView: 4,
-      slidesPerGroup: 2,
-      autoplay: true,
-      pagination: {
-          el: '.hi-sw-pg',
-          clickable : true,
-      },
-  });
-
-    // 하단 banner swiper
-    let swiper_f_slidebox = new Swiper('.f-banner-box', {
-        effect: 'fade',
+    // 디자인 영역 슬라이드 입니다.
+    let sw_design_left = new Swiper('.design-container-left', {
         loop: true,
-        autoplay: true,
+        direction: 'horizontal',
+        effect: 'slide',
+        slidesPerView: "1",
+        slidesPerGroup: 1,
+        loopAdditionalSlides: 1,
+        spaceBetween: 0,
+        allowTouchMove: false,
+        // autoplay: true,
+        navigation: {
+            nextEl: ".design-button-next",
+            prevEl: ".design-button-prev"
+        }
     });
-    
+
+    let sw_design_right = new Swiper('.design-right', {
+        spaceBetween: 0,
+        effect: "fade",
+        loop: "true",
+        allowTouchMove: false,
+        navigation: {
+            nextEl: ".design-button-next",
+            prevEl: ".design-button-prev"
+        }
+    });
+
+    // modal 닫기
+    $('.buchen-modal').click(function (event) {
+        event.preventDefault();
+        $('.process-modal-1')
+            .css("visibility", "visible")
+            .fadeIn();
+    });
+
+    $(document).click(function () {
+        $('.process-modal-1').hide()
+    })
+
+    // gotop 코드 및 header색상 변경 코드입니다.
+    $(window).scroll(function () {
+        let scY = $(window).scrollTop();
+        if (scY >= 400) {
+            $(gotop).addClass('gotop-active');
+            $(header).css("background-color", "white");
+            $(header).css("box-shadow", "0px 5px 10px rgb(255, 218, 218)");
+        } else {
+            $(gotop).removeClass('gotop-active');
+            $(header).css("background-color", "transparent");
+            $(header).css("box-shadow", "none");
+
+        }
+    });
+
+
+    // Design Process Modal 코드입니다.
+    $(".buchen-modal").click(function () { 
+        $(".modal").fadeIn(); 
+    });
+    //modal close
+    $(".modal-cont button").click(function () { 
+        $(".modal").fadeOut(); 
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let fix_wrap = $('.fix-wrap');
+    let fix_menu = $('.fix-menu');
+    let fix_menu_active = false;
+
+    fix_menu.click(function () {
+        fix_wrap.toggleClass('fix-wrap-active');
+        fix_menu_active = !fix_menu_active;
+    });
+
+    AOS.init();
 
 });
+
+// window.onload = function () {}
