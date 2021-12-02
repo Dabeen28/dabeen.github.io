@@ -1,692 +1,447 @@
 <!doctype html>
 <html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>풀무원 녹즙</title>
+    
+    <!-- favicon 입니다. -->
+    <link rel="shortcut icon" href="images/favicon_32x32.png">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-        <title>김다빈 포트폴리오</title>
-        <!-- jquery -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <!-- html5shiv -->
-        <!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
-        <!-- vender-prefix -->
-        <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
-        <script src="js/respond.min.js"></script>
-        <!-- <script src="js/progressbar.js"></script> -->
-        <!-- swiper -->
-        <link rel="stylesheet" href="js/swiper/swiper.min.css">
-        <script src="js/swiper/swiper.min.js"></script>
-        <!-- normalize.css -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/fontello/css/fontello.css">
-        <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/jquery-sakura.css">
-        <!-- 반응형 CSS 입니다. -->
-        <link rel="stylesheet" href="css/style1366px.css">
-        <link rel="stylesheet" href="css/style1024px.css">
-        <link rel="stylesheet" href="css/style768px.css">
-        <link rel="stylesheet" href="css/style428px.css">
-        <script src="js/script.js"></script>
-        <script src="js/jquery-sakura.js"></script>
+    <!-- Swiper 관련 파일입니다. -->
+    <link rel="stylesheet" href="js/swiper/swiper.css">
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <body>
-      <button class="gotop">
-          <span class="icon-up-dir"></span>
-      </button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
 
-        <button class="fix-menu">
-            <span class="icon-menu-1"></span>
-        </button>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
+</head>
+<body>
+  <!-- modal창 -->
+  <div class="modal">
+    <div class="modal-cont">
+      <p>
+        본 사이트는 포트폴리오용 사이트로 <br>
+        리소스는 원저작자에게 있습니다.
+      </p>
+      <span>HTML5, CSS3, javaScript & jQuery로 제작되었으며,<br>
+        크롬에 최적화 되어있습니다.</span>
+      <button>닫기</button>
+    </div>
+  </div>
 
-        <div class="fix-wrap">
-            <ul class="fix-gnb">
-                <li>
-                    <a href="#profile" class="move">Profile</a>
-                </li>
-                <li>
-                    <a href="#publishing" class="move">Publishing</a>
-                </li>
-                <li>
-                    <a href="#design" class="move">Design</a>
-                </li>
-                <li>
-                    <a href="#life" class="move">Life</a>
-                </li>
-                <li>
-                    <a href="#contact" class="move">Contact</a>
-                </li>
+  <!-- header part -->
+  <header class="header">
+    <!-- header-top part -->
+    <div class="header-top">
+        <div class="header-top-box container">
+            <ul class="ht-left">
+                <li><a href="#">녹즙이야기</a></li>
+                <li><a href="#">배달가능지역 검색</a></li>
+            </ul>
+            <ul class="ht-right">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객지원</a></li>
             </ul>
         </div>
+    </div>
 
-        <!-- Header 파트입니다. -->
-        <div class="wrap">
-            <header class="header">
-                <div class="container">
-                    <a href="#" class="logo">logo</a>
-                    <ul class="gnb">
-                        <li>
-                            <a href="#profile" class="move">Profile</a>
-                        </li>
-                        <li>
-                            <a href="#publishing" class="move">Publishing</a>
-                        </li>
-                        <li>
-                            <a href="#design" class="move">Design</a>
-                        </li>
-                        <li>
-                            <a href="#life" class="move">Life</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="move">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-
-            <!-- Visual 파트입니다. -->
-            <section class="visual" id="visual">
-                <div class="container">
-                    <div class="visual-gra"></div>
-                    <div data-aos="fade-up" data-aos-duration="2000" class="visual-box-1">
-                        <span class="visual-flower-1"></span>
-                        <span class="visual-flower-2"></span>
-                        <span></span>
-                    </div>
-                    <div class="visual-box-2">
-                        <span data-aos="fade-right" data-aos-duration="700" class="visual-img-1"></span>
-                        <span data-aos="fade-right" data-aos-duration="1300" class="visual-img-2"></span>
-                        <span data-aos="fade-right" data-aos-duration="1900" class="visual-img-3"></span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Profile 파트입니다. -->
-            <section data-aos="fade-down" data-aos-duration="2000" class="profile" id="profile">
-                <div class="container">
-                    <h2>Profile</h2>
-                    <div class="profile-wrap">
-                        <div class="profile-item-1">
-                            <span><img src="images/profile_me.png" alt=""></span>
-                            <p class="profile-txt-1">김다빈</p>
-                            <p class="profile-txt-2">
-                                <b>생년월일</b>
-                                1997.11.28</p>
-                            <p class="profile-txt-2 profile-txt-2-after">
-                                <b>이메일</b>
-                                designer_dabeen@naver.com</p>
-                            <p class="profile-txt-3">"쟤 진짜 잘한다!"의<br>
-                                '쟤'가 되도록 노력하자!</p>
-                        </div>
-                        <div class="profile-item-2">
-                            <ul class="profile-item-2-left">
-                                <li>education</li>
-                                <li>license</li>
-                                <li>activity</li>
-                                <li>award</li>
-                            </ul>
-                            <ul class="profile-item-2-right">
-                                <li>
-                                    2021.08 대구대
-                                    <b>시각디자인학과</b>
-                                    졸업<br>
-                                    2021.08 대구대
-                                    <b>미술교육학 (복수전공)</b>
-                                    졸업
-                                </li>
-                                <li>
-                                    <b>웹디자인기능사</b><br>
-                                    중등학교 2급 정교사(미술)<br>
-                                    2종 보통 운전면허
-                                </li>
-                                <li>
-                                    <b>2021.06 ~ 2021.12 그린컴퓨터아트학원<br>
-                                        [디지털컨버전스_플럽드러닝]<br>
-                                        PWA 제작 웹앱 프론트엔드 개발 양성과정 A 수료<br></b>
-                                    2020.05 성당중학교 교생실습<br>
-                                    2020.01 ~ 2020.03 (주)씨앗드림 단기인턴<br>
-                                    2019.02~2020.06 죽전 버거킹 아르바이트
-                                </li>
-                                <li>
-                                    2017~2019 1,2학기 성적우수<br>
-                                    2020.05 한국커뮤니케이션디자인협회 우수상<br>
-                                    2020.05 한국상품문화디자인학회 특별상<br>
-                                    2019.05 한국커뮤니케이션디자인협회 우수상<br>
-                                    2017.09 경상북도캐릭터공모전 입선
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="profile-item-3">
-                            <div class="profile-item-3-top">
-                                <span>skill</span>
-                                <ul class="profile-item-3-top-item">
-                                    <li>
-                                        <img src="images/skill_ai.png" alt="">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <img src="images/skill_ps.png" alt="">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <img src="images/skill_id.png" alt="">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <img src="images/skill_xd.png" alt="">
-                                        <span></span>
-                                    </li>
-                                    <li>
-                                        <img src="images/skill_ae.png" alt="">
-                                        <span></span>
-                                    </li>
-                                </ul>
-                                <ul class="profile-item-3-top-progressbar">
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                </ul>
-                            </div>
-                            <div class="profile-item-3-bottom">
-                                <ul class="profile-item-3-bottom-1">
-                                    <li><img src="images/skill_html.png" alt=""></li>
-                                    <li><img src="images/skill_css.png" alt=""></li>
-                                    <li><img src="images/skill_js.png" alt=""></li>
-                                </ul>
-                                <ul class="profile-item-3-bottom-2">
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                    <li>
-                                        <span></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About 영역입니다. -->
-            <section data-aos="fade-down" data-aos-duration="2000" class="aboutme" id="aboutme">
-                <div class="container">
-                    <h2>about me</h2>
-                    <p class="about-tit">
-                      나라는 사람을 한 단어로 정의내리지 말자!
-                    </p>
-                    <div class="aboutbox">
-                        <div class="aboutbox-1">
-                            <div>
-                                <span>더 나은 세상을 위해 도전하는 디자이너</span></div>
-                            <div>
-                                <span>꿈꾸던 아이디어를 실현하는 개발자</span></div>
-                            <div>
-                                <span>변화하는 미래를 꿈꾸는 몽상가</span></div>
-                            <div>
-                                <span>어려움을 즐기는 도전가</span></div>
-                            <div>
-                                <span>세상과 소통하고 공감하는 사람</span>
-                              </div>
-                            </div>
-                            <span class="about-img"></span>
-                        <div class="aboutbox-2">
-                            <p>프로그래머는 변화를 두려워하면 안되며 변화에 익숙해지기 위해서는 틀에 갇힌 사람이 되지 않아야 한다고 생각합니다.
-                            </p>
-                            <p>디자인과 졸업 후 코딩을 배우게 되면서, 지금까지의 저는 너무나도 좁은 세상에 살고 있었다는 것을 깨닫게 되었습니다.</p>
-                            <p>
-                                <span>프로그래밍은 '세상과 나를 연결해주는 창'</span>
-                                이라고 생각합니다.
-                                <span>끊임없이 세상과 소통 하고 변화를 두려워하지 않는 개발자</span>가 되겠습니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Possibility 영역입니다. -->
-            <section data-aos="fade-down" data-aos-duration="2000" class="possibility">
-                <div class="container">
-                    <h2>possibility</h2>
-                    <div class="possi-box">
-                        <div class="possi-box-1">
-                            <div>
-                                <span class="possi-box-1-title">고민보단 Go!</span>
-                                <span class="possi-box-1-subtitle">성실함과 도전정신</span>
-                                <p class="possi-box-1-txt">대학을 졸업할 때 까지도 저는 프로그래밍에 대해서 관심도, 지식도 없는 학생이었습니다. 내가
-                                    생각한 아이디어를 더 많은 사람들에게 공유하기 위해 프로그래밍이라는 수단을 선택하였고 많은 사람들과 소통을 하며 얘기를 나누고 문제가 해결되는
-                                    것을 즐기고 있습니다.
-                                </p>
-                            </div>
-                            <div>
-                                <span class="possi-box-1-title">어려울수록 침착하게</span>
-                                <span class="possi-box-1-subtitle">창의성과 문제해결능력</span>
-                                <p class="possi-box-1-txt">코딩을 배운지 얼마 되지 않아 웹디자인 실기시험을 보게 되었습니다. Javascript와
-                                    JQuery 실력이 미숙할 때라 제대로 구현을 해내지는 못했지만, 수업 시간에 CSS로 구현해냈던 다른 학생의 아이디어를 떠올려 최종 합격을 할
-                                    수 있게 되었습니다.
-                                </p>
-                            </div>
-                            <div>
-                                <span class="possi-box-1-title">늘 배움의 자세로 겸손하게</span>
-                                <span class="possi-box-1-subtitle">실무역량과 성실성</span>
-                                <p class="possi-box-1-txt">신입에게 있어 가장 중요한 자세는 늘 배우는 자세로 모든 것에 임해야 한다는 것이라 생각합니다. 어려운 것을 배울수록 기본에 충실해야 합니다. 실무에서의 시간이 늘어나 지금보다 더 성장하게 되더라도 마음가짐은 늘 초심에 기초하여 배움의 자세로 임하겠습니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="possi-box-2">
-                            <span class="possi-box-2-2"></span>
-                            <span class="possi-box-2-1"></span>
-                            <span class="possi-box-2-1"></span>
-                            <span class="possi-box-2-2"></span>
-                            <span class="possi-box-2-3"></span>
-                            <span class="possi-box-2-3"></span>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- 퍼블리싱 파트입니다 -->
-            <section data-aos="fade-down" data-aos-duration="2000" class="publ" id="publishing">
-                <div class="container">
-                    <h2>Publishing</h2>
-                    <button class="publ-button-prev icon-left-open"></button>
-                    <button class="publ-button-next icon-right-open"></button>
-                    <div class="publ-scrollbar"></div>
-                </div>
-                <div class="swiper-container publ-container">
-                    <ul class="swiper-wrapper publ-wrapper">
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_m-line.png" alt="엠라인스튜디오" title="엠라인스튜디오">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">01</p>
-                                    <p class="publ-slide-txtbox-tit">엠라인 스튜디오</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 7일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_netmarble.png" alt="넷마블문화재단" title="넷마블문화재단">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">02</p>
-                                    <p class="publ-slide-txtbox-tit">넷마블문화재단</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 4일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_sidiz.png" alt="시디즈" title="시디즈">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">03</p>
-                                    <p class="publ-slide-txtbox-tit">시디즈</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 2일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_udid.png" alt="udid" title="udid">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">04</p>
-                                    <p class="publ-slide-txtbox-tit">UDID</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 8일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_nexus.png" alt="udid" title="udid">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">05</p>
-                                    <p class="publ-slide-txtbox-tit">NEXUS</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 5일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_inha.png" alt="udid" title="udid">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">06</p>
-                                    <p class="publ-slide-txtbox-tit">인하대학교</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 14일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_sony.png" alt="sony" title="sony">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">07</p>
-                                    <p class="publ-slide-txtbox-tit">Sony</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 5일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_stx.png" alt="stx" title="stx">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">08</p>
-                                    <p class="publ-slide-txtbox-tit">STX건설</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 3일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="swiper-slide publ-slide">
-                            <img src="images/publ_udid.png" alt="udid" title="udid">
-                            <div class="publ-slide-box">
-                                <div class="publ-slide-txtbox">
-                                    <p class="publ-slide-txtbox-tit-num">09</p>
-                                    <p class="publ-slide-txtbox-tit">엠라인 스튜디오</p>
-                                    <p class="publ-slide-txtbox-txt">
-                                        제작기간 : 7일<br>
-                                        사용프로그램 : HTML5, CSS3, Js, JQuery
-                                    </p>
-                                    <span>PUBLISHING</span>
-                                    <span>ORIGINAL SITE</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
-            </section>
-
-            <!-- 디자인 파트입니다 -->
-
-            <section data-aos="fade-down" data-aos-duration="2000" class="design" id="design">
-                <div class="container">
-                    <h2>Design</h2>
-                    <div class="design-wrap">
-
-                        <div class="design-left">
-                            <div class="design-moniter">
-                              <img src="images/design_monitor.png" alt="moniter">
-                            </div>
-                            <div class="swiper-container design-container-left">
-                                <ul class="swiper-wrapper design-wrapper-left">
-                                    <li class="swiper-slide design-slide-left">
-                                        <img src="images/design_buchun.jpg" alt="부천국제영화제">
-                                        <span class="design-scroll"></span>
-                                    </li>
-                                    <li class="swiper-slide design-slide-left">
-                                      <img src="images/design_buchun_test.jpg" alt="부천국제영화제">
-                                      <span class="design-scroll"></span>
-                                  </li>
-                                  <li class="swiper-slide design-slide-left">
-                                    <img src="images/design_buchun.jpg" alt="부천국제영화제">
-                                    <span class="design-scroll"></span>
-                                </li>
-                                <li class="swiper-slide design-slide-left">
-                                  <img src="images/design_buchun_test.jpg" alt="부천국제영화제">
-                                  <span class="design-scroll"></span>
-                              </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="swiper design-right">
-
-                            <button class="design-button-next icon-right-open"></button>
-                            <button class="design-button-prev icon-left-open"></button>
-
-                                <ul class="swiper-wrapper design-wrapper-right">
-
-                                    <li class="swiper-slide design-slide-right">
-
-                                      <p class="design-slide-right-num">01</p>
-                                      <p class="design-slide-right-tit">부천국제페스티벌</p>
-                                      <p class="design-slide-right-txt">
-                                        기존의 웹사이트는 간단명료하게 보여주고자 하는 자료가 잘 정리되어져 있는 반면,
-                                        '영화제'라는 이미지와 '부천판타스틱영화제' 만의 감성 및 특징들이 웹사이트에서 잘
-                                        보여주지 못하는 디자인으로 제작되어 아쉬움을 주었다. 
-                                        이러한 부분들을 보완하여 클래식한 분위기와 감성을 색상과 텍스쳐로 담아내었다.
-                                      </p>
-                                      <p class="design-slide-right-desc">
-                                      <span class="design-slide-right-txt-left">
-                                        PROTECT<br>
-                                        DATE<br>
-                                        PROGRAM
-                                      </span>
-                                      <span class="design-slide-right-txt-right">
-                                        부천국제페스티벌 사이트 리디자인<br>
-                                        2021. 08<br>
-                                        AdobeXD, Photoshop
-                                      </span>
-                                      </p>
-                                      <div class="design-slide-right-button"> 
-                                        <a href="#">PROCESS</a>
-                                        <a href="#">RE:DESIGN</a>
-                                        <a href="#">ORIGINAL SITE</a>
-                                      </div>
-                                    </li>
-
-                                    <li class="swiper-slide design-slide-right">
-                                      <p class="design-slide-right-num">02</p>
-                                      <p class="design-slide-right-tit">투어2000</p>
-                                      <p class="design-slide-right-txt">
-                                        투어2000의 기존 사이트는 오페라색의 베이스로 하여 난색 계열에
-                                        중점을 둔 사이트였지만, 주 여행 상품이 바다와 관련된 곳이 많았다.
-                                        리디자인한 사이트는 바다와 관련하여 시원한 느낌을 주도록 제작하였다.
-                                      </p>
-                                      <p class="design-slide-right-desc">
-                                      <span class="design-slide-right-txt-left">
-                                        PROTECT<br>
-                                        DATE<br>
-                                        PROGRAM
-                                      </span>
-                                      <span class="design-slide-right-txt-right">
-                                        투어2000 사이트 리디자인<br>
-                                        2021. 08<br>
-                                        AdobeXD, Photoshop
-                                      </span>
-                                      </p>
-                                      <div class="design-slide-right-button"> 
-                                        <a href="#">PROCESS</a>
-                                        <a href="#">RE:DESIGN</a>
-                                        <a href="#">ORIGINAL SITE</a>
-                                      </div>
-                                    </li>
-
-                                    <li class="swiper-slide design-slide-right">
-                                      <p class="design-slide-right-num">03</p>
-                                      <p class="design-slide-right-tit">부천국제페스티벌</p>
-                                      <p class="design-slide-right-txt">
-                                        기존의 웹사이트는 간단명료하게 보여주고자 하는 자료가 잘 정리되어져 있는 반면,
-                                        '영화제'라는 이미지와 '부천판타스틱영화제' 만의 감성 및 특징들이 웹사이트에서 잘
-                                        보여주지 못하는 디자인으로 제작되어 아쉬움을 주었다. 
-                                        이러한 부분들을 보완하여 클래식한 분위기와 감성을 색상과 텍스쳐로 담아내었다.
-                                      </p>
-                                      <p class="design-slide-right-desc">
-                                      <span class="design-slide-right-txt-left">
-                                        PROTECT<br>
-                                        DATE<br>
-                                        PROGRAM
-                                      </span>
-                                      <span class="design-slide-right-txt-right">
-                                        부천국제페스티벌 사이트 리디자인<br>
-                                        2021. 08<br>
-                                        AdobeXD, Photoshop
-                                      </span>
-                                      </p>
-                                      <div class="design-slide-right-button"> 
-                                        <a href="#">PROCESS</a>
-                                        <a href="#">RE:DESIGN</a>
-                                        <a href="#">ORIGINAL SITE</a>
-                                      </div>
-                                    </li>
-
-                                    <li class="swiper-slide design-slide-right">
-                                      <p class="design-slide-right-num">04</p>
-                                      <p class="design-slide-right-tit">부천국제페스티벌</p>
-                                      <p class="design-slide-right-txt">
-                                        기존의 웹사이트는 간단명료하게 보여주고자 하는 자료가 잘 정리되어져 있는 반면,
-                                        '영화제'라는 이미지와 '부천판타스틱영화제' 만의 감성 및 특징들이 웹사이트에서 잘
-                                        보여주지 못하는 디자인으로 제작되어 아쉬움을 주었다. 
-                                        이러한 부분들을 보완하여 클래식한 분위기와 감성을 색상과 텍스쳐로 담아내었다.
-                                      </p>
-                                      <p class="design-slide-right-desc">
-                                      <span class="design-slide-right-txt-left">
-                                        PROTECT<br>
-                                        DATE<br>
-                                        PROGRAM
-                                      </span>
-                                      <span class="design-slide-right-txt-right">
-                                        부천국제페스티벌 사이트 리디자인<br>
-                                        2021. 08<br>
-                                        AdobeXD, Photoshop
-                                      </span>
-                                      </p>
-                                      <div class="design-slide-right-button"> 
-                                        <a href="#">PROCESS</a>
-                                        <a href="#">RE:DESIGN</a>
-                                        <a href="#">ORIGINAL SITE</a>
-                                      </div>
-                                    </li>
-                                    
-                                </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 라이프 파트입니다 -->
-
-            <section data-aos="fade-down" data-aos-duration="2000" class="life" id="life">
-                <div class="container">
-                  <h2>Life</h2>
-                    <div class="life-wrap">
-                      <div class="life-imgbox-1">
-                        <img src="images/life-imgbox-1.png" alt="lifebox-1">
-                      </div>
-                      <div class="life-imgbox-2">
-                        <img src="images/life-imgbox-2.png" alt="lifebox-2">
-                      </div>
-                      <div class="life-imgbox-3">
-                        <img src="images/life-imgbox-3.png" alt="lifebox-3">
-                      </div>
-                      <div class="life-imgbox-4">
-                        <img src="images/life-imgbox-4.png" alt="lifebox-4">
-                      </div>
-                    </div>
-                    <div class="life-wrap-768">
-                      <div class="life-item">1</div>
-                      <div class="life-item">2</div>
-                      <div class="life-item">3</div>
-                      <div class="life-item">
-                        <span>
-                          #다양한 취미 생활
-                        </span>
-                        <p>
-                          그림인스타 운영 및 사진 동호회 활동을 통해 
-                          다양한 취미로 일상을 즐겁게 보내고 있습니다.
-                        </p>
-                      </div>
-                      <div class="life-item">5</div>
-                      <div class="life-item">6</div>
-                      <div class="life-item">7</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 콘텍트 파트입니다 -->
-
-            <section data-aos="fade-down" data-aos-duration="2000" class="contact" id="contact">
-                <div class="container">
-                    <div class="contact-wrap">
-                      <p>Thank for watching my portfolio!</p>
-                      <P>
-                        <b>Github:</b> https://github.com/Dabeen28<br>
-                        <b>E-mail:</b> designer_dabeen@naver.com
-                      </P>
-                      <div class="contact-box">
-                        <ul>
-                          <li>
-                            <p>Github</p>
-                            <a href="https://github.com/Dabeen28" target="_blank">click here</a>
-                          </li>
-                          <li>
-                            <p>PDF<br>Download</p>
-                            <a href="asset/kimdabeen_portfolio.pdf" target="_blank">click here</a>
-                          </li>
-                          <li>
-                            <p>Design<br>Portfolio</p>
-                            <a href="#">click here</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                </div>
-            </section>
-
+    <!-- header-bottom part -->
+    <div class="header-bottom">
+        <div class="header-bottom-box container">
+            <div class="hd-logo"></div>
+            <div class="hd-nav">
+                <ul class="hd-nav-list">
+                    <li><a href="#">제품정보</a></li>
+                    <li><a href="#">맞춤제품찾기</a></li>
+                    <li><a href="#">시음신청</a></li>
+                    <li><a href="#">MY녹즙</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">창업안내</a></li>
+                </ul>
+            </div>
+            <div class="hd-icon">
+                <a href="#" class="hd-icon-1"></a>
+                <a href="#" class="hd-icon-2"></a>
+                <a href="#" class="hd-icon-3"></a>
+            </div>
         </div>
-    </body>
+    </div>
+</header>
+
+    <div class="wrap">
+        <div class="grey">
+            <!-- main part -->
+                <!-- slide part -->
+                <div class="slide">
+                    <div class="swiper-container slide-box">
+                        <div class="swiper-wrapper slide-box-wrapper">
+                            <div class="swiper-slide slide-box-slide">
+                                <img src="images/slide_1.jpg">
+                            </div>
+                            <div class="swiper-slide slide-box-slide">
+                                <img src="images/slide_2.jpg">
+                            </div>
+                            <div class="swiper-slide slide-box-slide">
+                                <img src="images/slide_3.jpg">
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination slide-box-pg"></div>
+                </div>
+                <!-- hi-login part -->
+                <section class="hi-login container">
+                    <h2 class="hi-tit">고객님 안녕하세요!</h2>
+                    <div class="hi-login-box">
+                        <article class="hi-left">
+                            <div class="swiper-container hi-sw">
+                                <div class="swiper-wrapper hi-sw-wrap">
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_1.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">음용내역</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_2.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">음용제품변경</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_3.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">찜한제품</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_4.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">고객번호등록/찾기</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_5.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">스마트청구서</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide hi-sw-slide">
+                                        <a href="#" class="hi-sw-box">
+                                            <img src="images/swiper_6.png" class="hi-sw-img">
+                                            <span class="hi-sw-txt">배달건너뛰기</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination hi-sw-pg">
+                                </div>
+                            </div>
+                        </article>
+                        <div class="hi-right-box">
+                            <div class="hi-right">
+                                <p>지금 로그인하여 <b>맞춤 제품을<br>추천</b> 받아보세요!</p>
+                                <a href="#">로그인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 오늘은 이런 제품 어떠세요? part -->
+                <section class="today-pd container">
+                    <h2 class="today-tit">오늘은 이런 제품 어떠세요?</h2>
+                    <div class="today-img">
+                        <a href="#" class="today-hearticon"></a>
+                        <a href="#">
+                            <img src="images/pd_1.jpg">
+                            <div class="today-img-txt">
+                                <span class="today-img-tit">노니 엔플리어</span><br>
+                                <span class="charge">2600원</span>
+                                <span class="ml">(260ml)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="today-img">
+                        <a href="#" class="today-hearticon"></a>
+                        <a href="#">
+                            <img src="images/pd_2.jpg">
+                            <div class="today-img-txt">
+                                <span class="today-img-tit">액티비아 프리미엄</span><br>
+                                <span class="charge">2600원</span>
+                                <span class="ml">(260ml)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="today-img">
+                        <a href="#" class="today-hearticon"></a>
+                        <a href="#">
+                            <img src="images/pd_3.jpg">
+                            <div class="today-img-txt">
+                                <span class="today-img-tit">듀얼케어 리우머먼바이탈</span><br>
+                                <span class="charge">2600원</span>
+                                <span class="ml">(260ml)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="today-img">
+                        <a href="#" class="today-hearticon"></a>
+                        <a href="#">
+                            <img src="images/pd_4.jpg">
+                            <div class="today-img-txt">
+                                <span class="today-img-tit">프레시 케일&샐러리</span><br>
+                                <span class="charge">2600원</span>
+                                <span class="ml">(260ml)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <h3 class="today-bt"><a href="#">상세하게 추천받기</h3></a>
+                    <a href="#" class="today-bt-img"></a>
+                </section>
+        </div>
+        <!-- best-production part -->
+        <section class="best-pd container clearfix">
+            <article class="best-pd-left">
+                <h2 class="best-pd-tit">베스트 제품</h2>
+                <ul class="best-pd-list">
+                    <li><a href="#" class="best-pd-list-focus">10대 ↓</a></li>
+                    <li><a href="#">20대</a></li>
+                    <li><a href="#">30대</a></li>
+                    <li><a href="#">40대</a></li>
+                    <li><a href="#">50대 ↑</a></li>
+                </ul>
+            </article>
+            <article class="best-pd-right clearfix">
+                <div class="best-pd-focus">
+                    <a href="#">
+                        <a href="#" class="today-hearticon"></a>
+                        <a href="#" class="a1_box"><b>1</b>위</a>
+                        <img src="images/best_20_1.jpg">
+                        <div class="best-pd-img-txt">
+                            <span class="best-pd-img-tit_1"><a href="#">식물성유산균<br>쌀요거트</a></span><br>
+                            <span class="best-pd-img-tit_2"><a href="#">2,000원</a></span>
+                            <span class="best-pd-img-txt_3"><a href="#">(150ml)</a></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-pd-right-top-box">
+                    <a href="#">
+                        <a href="#" class="today-hearticon"></a>
+                        <div class="a2_box"><b>2</b>위</div>
+                        <img src="images/best_20_2.jpg">
+                        <div class="best-pd-img-txt-2">
+                            <span class="best-pd-img-tit_1-1">러브미 케일&셀러리</span><br>
+                            <span class="best-pd-img-tit_2-1">1,800원</span>
+                            <span class="best-pd-img-txt_3-1">(130ml)</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-pd-right-bottom-box">
+                    <a href="#">
+                        <a href="#" class="today-hearticon"></a>
+                        <div class="a2_box"><b>3</b>위</div>
+                        <img src="images/best_20_3.jpg">
+                        <div class="best-pd-img-txt-2">
+                            <span class="best-pd-img-tit_1-1">식물성 유산균 위&캡슐</span><br>
+                            <span class="best-pd-img-tit_2-1">2,100원</span>
+                            <span class="best-pd-img-txt_3-1">(130ml)</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-pd-right-bottom-box">
+                    <a href="#">
+                        <a href="#" class="today-hearticon"></a>
+                        <div class="a2_box"><b>4</b>위</div>
+                        <img src="images/best_20_4.jpg">
+                        <div class="best-pd-img-txt-2">
+                            <span class="best-pd-img-tit_1-1">노니&깔라만시</span><br>
+                            <span class="best-pd-img-tit_2-1">2,100원</span>
+                            <span class="best-pd-img-txt_3-1">(130ml)</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="best-pd-right-bottom-box">
+                    <a href="#">
+                        <a href="#" class="today-hearticon"></a>
+                        <div class="a2_box"><b>5</b>위</div>
+                        <img src="images/best_20_5.jpg">
+                        <div class="best-pd-img-txt-2">
+                            <span class="best-pd-img-tit_1-1">식물성유산균 오메가&<br>치아씨드</span><br>
+                            <span class="best-pd-img-tit_2-1">2,100원</span>
+                            <span class="best-pd-img-txt_3-1">(130ml)</span>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <!-- middle-banner part -->
+        <div class="m-banner container">
+            <a href="#"></a>
+        </div>
+        <!-- 고객님 무엇이 궁금하세요? part -->
+        <div class="grey">
+            <section class="question container">
+                <div class="q-top">
+                    <h2 class="question-tit">고객님 무엇이 궁금하세요?</h2>
+                    <h4 class="question-go"><a href="#">바로가기 ></a></h4>
+                </div>
+                <div class="question-list">
+                    <div class="question-list-img">
+                        <a href="#" class="img-1-1"><img src="images/ico_sprite_pc.png" class="qli-1"></a>
+                    </div>
+                    <a href="#" class="ql-right">
+                        <p class="ql-text">
+                            <span>제품</span><br>
+                            어떤 제품이<br>
+                            저에게 맞을까요?
+                        </p>
+                    </a>
+                </div>
+                <div class="question-list">
+                    <div class="question-list-img">
+                        <a href="#" class="img-1-2"><img src="images/ico_sprite_pc.png" class="qli-2"></a>
+                    </div>
+                    <a href="#" class="ql-right">
+                        <p class="ql-text">
+                            <span>음용고객</span><br>
+                            홈페이지에서<br>
+                            다른 제품으로 변경할 수<br>
+                            있나요?
+                        </p>
+                    </a>
+                </div>
+                <div class="question-list">
+                    <div class="question-list-img">
+                        <a href="#" class="img-1-3"><img src="images/ico_sprite_pc.png" class="qli-3"></a>
+                    </div>
+                    <a href="#" class="ql-right">
+                        <p class="ql-text">
+                            <span>음용고객</span><br>
+                            출장이나 휴가 때문에<br>
+                            잠깐 못 먹을거 같은데<br>
+                            어떻게 해야하나요?
+                        </p>
+                    </a>
+                </div>
+                <div class="question-list">
+                    <div class="question-list-img">
+                        <a href="#" class="img-1-4"><img src="images/ico_sprite_pc.png" class="qli-4"></a>
+                    </div>
+                    <a href="#" class="ql-right">
+                        <p class="ql-text">
+                            <span>주문/배달</span><br>
+                            좀 더 편하게<br>
+                            결제하고 싶은데<br>
+                            어떤 종류가 있나요?
+                        </p>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- footer-banner -->
+        <div class="f-banner container">
+            <div class="swiper-container f-banner-box">
+                <div class="swiper-wrapper f-slide-wrapper">
+                    <div class="swiper-slide f-slide-slide-1">
+                        <img src="images/f_slide_1.jpg">
+                    </div>
+                    <div class="swiper-slide slide-box-slide-2">
+                        <img src="images/f_slide_2.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- notice-part -->
+    <section class="notice container">
+      <div class="notice-left">
+          <div class="nl-txt clearfix">
+              <h2>공지사항</h2>
+              <a href="#" class="nl-txt-more">더 보기</a>
+          </div>
+          <ul class="nl-list clearfix">
+              <li>
+                  <a href="#">풀무원녹즙 홈페이지 점검 안내</a>
+                  <span>2020.08.27</span>
+              </li>
+              <li>
+                  <a href="#">카카오톡 채널 추가하기</a>
+                  <span>2020.06.10</span>
+              </li>
+              <li>
+                  <a href="#">내맘대로 주문하기</a>
+                  <span>2020.06.03</span>
+              </li>
+          </ul>
+      </div>
+      <article class="notice-center">
+          <h3 class="nc-tit">고객 기쁨 센터</h3>
+          <h3 class="nc-txt">080-800-0393</h3>
+          <span class="nc-span">평일 09:00 ~ 18:00</span>
+      </article>
+      <article class="notice-right">
+          <h3 class="nr-tit">배달 가능지역 검색</h3>
+          <p class="nr-txt">
+              원하시는 풀무원 녹즙<br>
+              지점을 바로 찾아보세요!
+          </p>
+          <a href="#" class="nr-go">조회하기 ></a>
+      </article>
+  </section>
+  <!-- footer part -->
+  <footer>
+      <div class="ft-box">
+          <section class="footer-top container">
+              <ul class="ft-list clearfix">
+                  <li><a href="#">브랜드소개</a></li>
+                  <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                  <li><a href="#">사업소개</a></li>
+                  <li><a href="#">이메일무단수집거부</a></li>
+                  <li><a href="#">이용약관</a></li>
+              </ul>
+      </div>
+      </section>
+      <section class="footer-bottom container">
+          <a href="#" class="fb-logo"></a>
+          <div class="fb-right">
+              <p class="fb-r-txt">
+                  (주)풀무원녹즙 | 대표이사:김기석 | 대표전화 : 02-2186-8500 | 개인정보관리책임자:김정만 | 사업자등록번호:301-81-98406<br>
+                  통신판매번호:2016-충북증평-00045 <b>사업자정보확인</b> | (주)풀무원녹즙 충청북도 증평군 도안면 원명로 32 | 고객센터:080-800-0393 (평일 09:00~18:00 토,일,공휴일 휴무)
+              </p>
+              <span class="fb-r-txt-2">
+                  COPTRIGHT○pulmuonegreenjuice co,Ltd. ALL RIGHTS RESERVED
+              </span>
+          </div>
+          <div class="fb-left">
+              <div class="fb-sitemap">
+                <option class="fb-txt" value="#">풀무원가족사이트
+                  <img src="images/up.png" class="fb-up">
+                </option>
+                <option class="fb-txt" value="#">풀무원건강생활
+                  <img src="images/up.png" class="fb-up">
+                </option>
+                <option class="fb-txt" value="#">풀무원베이비밀
+                  <img src="images/up.png" class="fb-up">
+                </option>
+                <option class="fb-txt" value="#">풀무원잇슬림
+                  <img src="images/up.png" class="fb-up">
+                </option>
+              </div>
+          </div>
+      </section>
+  </footer>
+    </div>
+    
+</body>
 
 </html>
