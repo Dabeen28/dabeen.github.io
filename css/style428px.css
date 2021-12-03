@@ -408,7 +408,8 @@
   .contact-wrap { width: 100%; height: 66.7rem; margin-top: 25%;}
   
   .contact-wrap > p:nth-child(1) {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   
   .contact-box {
@@ -434,7 +435,11 @@
     font-size: 1.4rem;
   }
   
-  
+  .contact-img {
+    right: 0rem;
+    width: 42rem;
+    height: 42rem;
+  }
   
   
   

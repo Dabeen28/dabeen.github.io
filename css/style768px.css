@@ -680,6 +680,7 @@
 
 .contact-wrap {
   margin-top: 15rem;
+  width: 60.8rem;
 }
 
 .contact-wrap > p:nth-child(2) {
@@ -703,7 +704,10 @@
   padding-top: 24%;
 }
 
-
+.contact-img {
+  width: 73rem;
+  height: 73rem;
+}
 
 
 
