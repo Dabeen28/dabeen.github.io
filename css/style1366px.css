@@ -572,23 +572,6 @@
     width: 90rem;
   }
 
-  .modal-imgbox img {
-    height: 207rem;
-  }
-
-  .modal-cont p {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  .modal-cont span {
-    font-size: 1.4rem;
-  }
-
-  .modal-cont button {
-    margin-top: 25rem;
-  }
-
   /* life 파트입니다. */
   .life {
     height: 76.8rem;

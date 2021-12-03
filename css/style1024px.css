@@ -590,39 +590,12 @@ h2 {
 .modal-cont {
   width: 76rem;
   height: 42rem;
-  padding: 2rem;
 }
 
 .modal-imgbox {
-  height: 35rem;
+  height: 40rem;
 }
 
-.modal-imgbox img {
-  height: 175rem;
-}
-
-.modal-cont p {
-  font-size: 1.8rem;
-}
-
-.modal-cont p > span {
-  font-size: 3rem !important;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.modal-cont span {
-  font-size: 1.2rem;
-}
-
-.modal-cont button {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  padding: 1.2rem 3rem;
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
 
 /* Life 파트입니다. */
 .life {
