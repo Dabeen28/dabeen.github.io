@@ -62,7 +62,9 @@ window.onload = function () {
     let notice_slide = new Swiper(".notice-sw", {
         effect: 'slide',
         clickable: true,
-        slidesPerView: 3.5,
+        slidesPerView: 3.3,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
     });
 
 };
