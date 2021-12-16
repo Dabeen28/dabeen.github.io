@@ -81,18 +81,6 @@ $(document).ready(function () {
         }
     });
 
-    // modal 닫기
-    $('.buchen-modal').click(function (event) {
-        event.preventDefault();
-        $('.process-modal-1')
-            .css("visibility", "visible")
-            .fadeIn();
-    });
-
-    $(document).click(function () {
-        $('.process-modal-1').hide()
-    })
-
     // gotop 코드 및 header색상 변경 코드입니다.
     $(window).scroll(function () {
         let scY = $(window).scrollTop();
@@ -110,28 +98,30 @@ $(document).ready(function () {
 
 
     // Design Process Modal 코드입니다.
-    $(".buchen-modal").click(function () { 
-        $(".modal").fadeIn(); 
+    $(".buchen-modal").click(function (event) { 
+      event.preventDefault();
+        $(".modal-1").fadeIn(); 
     });
-    //modal close
-    $(".modal-cont button").click(function () { 
-        $(".modal").fadeOut(); 
+    $(".tour-modal").click(function (event) { 
+      event.preventDefault();
+      $(".modal-2").fadeIn(); 
+    });
+    $(".jeju-modal").click(function (event) { 
+      event.preventDefault();
+      $(".modal-3").fadeIn(); 
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Design Process modal close
+    $(".modal-1>.modal-cont button").click(function () { 
+        $(".modal-1").fadeOut(); 
+    });
+    $(".modal-2>.modal-cont button").click(function () { 
+      $(".modal-2").fadeOut(); 
+    });
+    $(".modal-3>.modal-cont button").click(function () { 
+      $(".modal-3").fadeOut(); 
+    });
 
 
     let fix_wrap = $('.fix-wrap');
