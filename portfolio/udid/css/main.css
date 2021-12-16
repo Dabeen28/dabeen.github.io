@@ -167,23 +167,13 @@ strong {
 
 /* header part */
 .header {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 0;
   left: 0;
   width: 100%;
   background-color: transparent;
   z-index: 999;
-}
-
-.top-fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 9rem;
-  width: 100%;
-  border-bottom: 1px solid #eee;
-  background: #fff;
 }
 
 .menu {
@@ -237,14 +227,21 @@ strong {
   margin-right: 5rem;
 }
 
-.gnb li .active a:after {
+.active {
+  font-weight: 500;
+}
+
+.gnb li.active a:after {
+  content: '';
   position: absolute;
-  /* display: none; */
-  top: 7rem;
-  left: 4.5rem;
+  left: 50%;
+  bottom: -3px;
+  margin-left: -2px;
   width: 4px;
   height: 4px;
   background: #f94b4b;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -841,15 +838,14 @@ strong {
 .history-bottom {
   position: relative;
   display: block;
-  width: 2500rem;
+  width: 160rem;
   height: 52.6rem;
-  overflow: hidden;
 }
 
 .sw-history {
   position: relative;
   display: block;
-  width: 100%;
+  width: 250rem;
   height: 100%;
   padding-left: 1.8rem;
   overflow: hidden;
@@ -861,7 +857,7 @@ strong {
   top: 1.9rem;
   right: 0;
   left: 0;
-  width: 2070rem;
+  width: 250rem;
   height: 0.2rem;
   background: #ddd;
 }
@@ -870,7 +866,7 @@ strong {
 .sw-history-list-1 {
   position: relative;
   display: block;
-  width: 46.5rem;
+  width: 46.5rem !important;
   margin-top: 2rem;
   padding: 7rem 4rem 0;
   letter-spacing: -0.05rem;
@@ -885,7 +881,7 @@ strong {
   height: 3.6rem;
   border: 0;
   background: transparent url('../images/sec3_icon.gif');
-  z-index: 9999999999999999999;
+  z-index: 9999999999;
 }
 
 .sw-history-list::after {
