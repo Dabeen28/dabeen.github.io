@@ -1,25 +1,21 @@
 window.onload = function () {
   AOS.init();
 
-//  a::after 동작 구현 연습중입니다.
-//   $(window).scroll(function(){  
-//     // 웹 브라우저 오른쪽의 스크롤 바의 위치를 파악      
-//     var scY = $(window).scrollTop();
-//     if(scY >= 800) {           
-//         // css 를 추가하겠다.
-//         $('.gnb li .active').addClass('gnb li .active a:after'); 
-//     }else{
-//         // css 를 제거하겠다.
-//         $('.gnb li .active').removeClass('gnb li .active a:after');
-//     }
-// });
-
+let browserPoint = (event)=>{
+  console.log(`브라우저 좌표 : (${event.pageX}, ${event.pageY})`);
+}
+let clientPoint = (event) =>{
+  console.log(`화면 좌표 : (${event.clientX}, ${event.clientY})`);
+}
+window.addEventListener('click',e=>{
+  browserPoint(e);
+  clientPoint(e);
+});
 
 // modal 닫기
 $('.modal').click(function () {
   $(this).fadeOut();
 });
-
 
 // go-top 상단으로 이동하기!
 $( window ).scroll( function() {
@@ -35,21 +31,53 @@ $( '.go-top' ).click( function() {
   return false;
 } );
 
-// header scroll시 상단 고정.
-  $(window).scroll(function(){  
-      // 웹 브라우저 오른쪽의 스크롤 바의 위치를 파악      
-      var scY = $(window).scrollTop();
-      if(scY >= 80) {           
-          // css 를 추가하겠다.
-          $('.header').addClass('top-fixed'); 
-      }else{
-          // css 를 제거하겠다.
-          $('.header').removeClass('top-fixed');
-      }
-  });
+// scY 높이에 따라 header에 background-color를 넣는 코드입니다.
+    let header = $('.header');
+    
+    $(window).scroll(function () {
+        let scY = $(window).scrollTop();
+        if (scY >= 80) {
+            $(header).css("background", "white");
+            $(header).css("border-bottom", "1px solid #eee");
+        } else {
+            $(header).css("background", "transparent");
+            $(header).css("border-bottom", "none");
+        }
+    });
+
+    $('.header').onclick = function(){
+      $('.one').addClass('active');
+    };
   
+    // scY 값에 따라 header li의 효과가 달라지는 코드입니다.
+  //   let list = $('.gnb>li');
+
+  //   $(window).scroll(function () {
+  //     let scY = $(window).scrollTop();
+  //     if (scY <= 710) {
+  //       $(list).removeClass('active');
+  //         $('.one').addClass('active');
+  //     } else if (scY <= 1679) {
+  //       $('.one').removeClass('active');
+  //       $('.two').addClass('active');
+  //     } else if (scY <= 2770) {
+  //       $('.two').removeClass('active');
+  //       $('.three').addClass('active');
+  //     } else if (scY <= 3635) {
+  //       $('.three').removeClass('active');
+  //       $('.four').addClass('active');
+  //     } else if (scY <= 4710) {
+  //       $('.four').removeClass('active');
+  //       $('.five').addClass('active');
+  //     } else if (scY <= 5230) {
+  //       $('.five').removeClass('active');
+  //       $('.six').addClass('active');
+  //     }
+  // });
+
+
 // visual 
-var swiper = new Swiper('.sw-slide', {
+let slide_swiper = new Swiper('.sw-slide', {
   loop: true,
   effect: 'fade',
   autoplay : {
@@ -64,7 +92,7 @@ var swiper = new Swiper('.sw-slide', {
 });
 
 // // service portfolio part 
-var swiper = new Swiper('.sw-service-p', {
+let service_swiper = new Swiper('.sw-service-p', {
   loop: true,
   direction: 'horizontal',
   effect: 'slide',
@@ -80,12 +108,13 @@ var swiper = new Swiper('.sw-service-p', {
 });
 
 // History Part
-var swiper = new Swiper('.sw-history', {
+let history_swiper = new Swiper('.sw-history', {
   loop: false,
   effect: 'slide',
-  slidesPerView: "auto",
-  spaceBetween: 100,
-  slidesPerGroup: 3,
+  direction: 'horizontal',
+  slidesPerView: 3.5,
+  slidesPerGroup: 1,
+  spaceBetween: 30,
 
 });
 
