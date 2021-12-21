@@ -148,15 +148,16 @@ body { font-family: "Malgun Gothic", Dotum, "Heiti TC", Roboto, Droid, "Helvetic
     position: relative;
     display: block;
 }
+
 /* 소니 사이트 */
 .sony-site {
     position: relative;
     display: block;
     background-color: #f0f4f8;
     padding: 6rem 0;
-    height: 50rem;
+    height: 100%;
 
-    margin-top: -500px;
+    margin-top: -767px;
     transition: margin-top 0.5s;
 }
 
@@ -197,11 +198,64 @@ body { font-family: "Malgun Gothic", Dotum, "Heiti TC", Roboto, Droid, "Helvetic
 }
 
 .sony-site-list {
+  display: grid;
   margin-bottom: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.sony-site-list div {
+  width: 100%;
+}
+
+.sony-site-list div>a>img {
+  width: 100%;
+}
+
+.sony-site-list div:nth-child(1) {
+  grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.sony-site-list div:nth-child(2) {
+  grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.sony-site-list div:nth-child(3) {
+  grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.sony-site-list div:nth-child(4) {
+  grid-column: 3 / 4;
+	grid-row: 1 / 2;
 }
 
 .sony-site-cate {
+  width: 100%;
+  height: 16.2rem;
   background: #fff;
+}
+
+.sony-site-cate > p {
+  width: 21.5%;
+  height: 9.14rem;
+  margin-left: 2.52%;
+  float: left;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.sony-site-cate > p:last-child {
+  margin-top: -1rem;
+}
+
+.sony-site-cate > p > a {
+  color: #5d58f5;
+  font-size: 1.6rem;
+  line-height: 1.53846;
+  display: block;
 }
 
 /* 상단 */
@@ -1544,7 +1598,7 @@ body { font-family: "Malgun Gothic", Dotum, "Heiti TC", Roboto, Droid, "Helvetic
     margin-top: 1rem;
 }
 
-/* 모든 sns 내용은 일단 숨긴다. */
+/* 모든 sns 내용 숨기기. */
 .sns-cont {
     display: none;
 }
