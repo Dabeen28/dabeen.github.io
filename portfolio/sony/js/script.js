@@ -1,4 +1,3 @@
-// html 을 렌더링할때 실행
 $(document).ready(function () {
 
   // modal close
@@ -16,7 +15,7 @@ $(document).ready(function () {
           $('.gotop').removeClass('gotop-active');
       }
 
-        // 위로가기 
+  // 위로가기 
   $('.gotop').click(function (e) {
     // href를 막는다.
     e.preventDefault();
@@ -25,16 +24,13 @@ $(document).ready(function () {
     }, 600);
 });
 
-      // 소니 사이트 닫기
+  // 소니 사이트 닫기
       if (sony_site.hasClass('sony-site-active')) {
           sony_site.removeClass('sony-site-active');
           sony_site.attr('site-open', 'hide');
           site.removeAttr('style');
       }
-
   });
-
-
 
   // 메뉴기능
   const menu = $('.menu-list > li:nth-child(2) > a');
