@@ -6,7 +6,7 @@ $(document).ready(function () {
 		$(this).fadeOut();
 	});
 
-  // 스크롤바의 위치에 따라서 gotop 이 보이고 숨겨짐
+  // gotop 스크롤 위치에 따라 보이고 숨김
   $(window).scroll(function () {
       // 스크롤바의 위치를 체크한다.
       let scY = $(window).scrollTop();
@@ -15,6 +15,15 @@ $(document).ready(function () {
       } else {
           $('.gotop').removeClass('gotop-active');
       }
+
+        // 위로가기 
+  $('.gotop').click(function (e) {
+    // href를 막는다.
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
+});
 
       // 소니 사이트 닫기
       if (sony_site.hasClass('sony-site-active')) {
@@ -25,21 +34,14 @@ $(document).ready(function () {
 
   });
 
-  // 위로가기 
-  $('.gotop').click(function (e) {
-      // href를 막는다.
-      e.preventDefault();
-      $('html, body').animate({
-          scrollTop: 0
-      }, 600);
-  });
+
 
   // 메뉴기능
   const menu = $('.menu-list > li:nth-child(2) > a');
   const depth2 = $('.depth2');
 
 
-  // 타이머 저장하자.
+  // 타이머 저장
   let depth2_timer;
 
   menu.mouseenter(function () {
@@ -67,26 +69,20 @@ $(document).ready(function () {
   const site = $('.site');
   const sony_site = $('.sony-site');
   const sony_site_bt = $('.sony-site-bt');
-  // body 를 참조해서 완성해 보세요.
 
-  // 아래 코드를 참조하셔서 완성해 보세요.
-  //  site-open, 'hide'   'show'
   sony_site.attr('site-open', 'hide');
   site.click(function (event) {
       event.preventDefault();
 
-      // 현재의 상태를 저장한 것을 파악한다.
-      // site-open : hide 숨겨진 상태
-      // site-open : show 보이고 있는 상태
       let temp = sony_site.attr('site-open');
 
       if (temp == 'hide') {
-          // 현재 숨겨진 상태라면
+          // 숨겨진 상태일 경우,
           sony_site.addClass('sony-site-active');
           sony_site.attr('site-open', 'show');
           $(this).css('border', '2px solid #5d58f4');
       } else {
-          // 현재 보이고 있는 상태라면
+          // 보이는 상태일 경우,
           sony_site.removeClass('sony-site-active');
           sony_site.attr('site-open', 'hide');
           $(this).removeAttr('style');
@@ -107,7 +103,6 @@ $(document).ready(function () {
   const search_txt = $('#search-txt');
   const form_cancel = $('.form-cancel');
 
-  // 상태를 저장하자.
   search_wrap.attr('open-state', 'hide');
 
   search_wrap.click(function (event) {
@@ -170,7 +165,7 @@ $(document).ready(function () {
       },
   });
 
-  // 버튼 보이고, 숨기기
+  // 최신 상품 슬라이드 버튼 보이고, 숨기기
   $('.sw-latest').mouseenter(function () {
       $('.sw-latest-prev').stop().fadeIn(300);
       $('.sw-latest-next').stop().fadeIn(300);
@@ -181,7 +176,7 @@ $(document).ready(function () {
   });
 
   // 뉴스 슬라이더
-  var sw_news = new Swiper('.sw-news', {
+  let sw_news = new Swiper('.sw-news', {
       slidesPerView: 3,
       spaceBetween: 52,
       allowTouchMove: false,
@@ -217,35 +212,29 @@ $(document).ready(function () {
       sns_pos_arr[i] = sns_stx + (sns_space * i);
   }
 
-  // 동일한 동작이 반복(2번 이상)이 된다.
-  // 현재 보여야 할 sns-cont 를 저장한다.
   let sns_cont_box;
 
   function snsPos(_num, who) {
-      // 모두 숨겨라
+
       sns_cont.hide();
-      // 일단 내용을 바꾸어서 보여줄 준비를 한다.
+      
       let box = who.attr(sns_box_attr);
       sns_cont_box = $(box);
       sns_cont_box.show();
       // 위치를 잡는다.
       sns_box.css({
           left: _num
-      });
-      // 부드럽게 보여준다.
+      }); 
       sns_box.stop().fadeIn();
   }
 
   // 닫기 버튼 클릭
   sns_box_close.click(function(){
-      // sns_cont.hide();
       sns_box.stop().fadeOut(500);
   });
-  // 마우스가 롤 오버 되면 계속 보여야 한다.
+
   sns_box.mouseenter(function () {
-      // 모두 숨겨라
       sns_cont.hide();
-      // 저장해 둔 것은 보여라
       sns_cont_box.show();
       $(this).show();
   });
@@ -275,7 +264,3 @@ $(document).ready(function () {
   });
 
 });
-
-
-// image, video, audio 등 리소스를 불러들였을 때 실행 
-window.onload = function () {};
