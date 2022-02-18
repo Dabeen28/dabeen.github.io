@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+body {}
+
+.container {
+  position: relative;
+  display: block;
+  width: 121.8rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#wrap {
+  position: relative;
+  display: block;
+  width: 100vw;
+}
+
+.header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 97.9rem;
+  background: url("../images/benner.png") no-repeat center;
+  margin-bottom: 24.5rem;
+}
+
+.menu {
+  height: 8.5rem;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 8.3rem;
+  height: 2.6rem;
+  background: url("../images/logo.png") no-repeat center;
+  color: transparent;
+  margin-top: 2.9rem;
+  float: left;
+}
+
+.list {
+  position: relative;
+  display: block;
+  width: 13.2rem;
+  height: 100%;
+  float: right;
+  margin-top: 2.9rem;
+}
+
+.list > a {
+  position: relative;
+  display: block;
+  width: 3.3rem;
+  height: 3.3rem;
+  float: left;
+}
+
+.list > a:nth-child(1) {
+  background: url("../images/icon-1.png") no-repeat center;
+  margin-right: 1.6rem;
+}
+
+.list > a:nth-child(2) {
+  background: url("../images/icon-2.png") no-repeat center;
+  margin-right: 1.6rem;
+}
+
+.list > a:nth-child(3) {
+  background: url("../images/icon-3.png") no-repeat center;
+}
+
+.banner {
+  position: relative;
+  margin-top: 28.4rem;
+  text-align: right;
+}
+
+.banner .txt-1 {
+  font-size: 2rem;
+}
+
+.banner .txt-2 {
+  font-size: 4.8rem;
+  line-height: 7.5rem;
+}
+
+.banner .txt-3 {
+  font-size: 6.3rem;
+  font-weight: 600;
+  margin-bottom: 11rem;
+}
+
+.banner .txt-4 {
+  font-size: 2.4rem;
+  background-color: #000;
+  padding: 1.4rem 2.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.banner .txt-4:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* whysidiz part */
+.whysidiz {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 82.4rem;
+  margin-bottom: 24.5rem;
+}
+
+.whysidiz span {
+  display: inline-block;
+  font-size: 3.4rem;
+  margin-bottom: 4rem;
+}
+
+.why-mainimg {
+  position: relative;
+  display: block;
+  width: 59.5rem;
+  height: 74.4rem;
+  background: url("../images/section-1.jpg") no-repeat center;
+  background-size: 100%;
+  float: left;
+  margin-right: 3rem;
+  margin-bottom: 11rem;
+
+  transition: background-size 0.5s;
+}
+
+.why-mainimg:hover {
+  background-size: 110%;
+}
+
+.why-box .why-txt1 {
+  font-size: 5.6rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.3rem;
+  margin-bottom: 3.1rem;
+}
+
+.why-box .why-txt1::first-line {
+  font-size: 2.8rem;
+  letter-spacing: 0;
+}
+
+.why-txt {
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+}
+
+.why-list {
+  margin-top: 24.4rem;
+}
+
+.why-list li {
+  float: left;
+  width: 18rem;
+  margin-right: 2.4rem;
+}
+
+.why-list li:last-child {
+  margin-right: 0rem;
+}
+
+.why-list li span {
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+}
+
+.why-list li span > img {
+  margin-right: 1rem;
+}
+
+.why-list li > img {
+  margin-top: 1rem;
+}
+
+/* promotion part */
+.promotion {
+  position: relative;
+  display: block;
+  height: 100%;
+  margin-bottom: 24.5rem;
+}
+
+.promotion > .container {
+  text-align: center;
+}
+
+.promotion span {
+  display: block;
+  position: relative;
+}
+
+.promotion-txt1 {
+  font-size: 3.3rem;
+}
+
+.promotion-txt2 {
+  font-size: 1.8rem;
+  line-height: 4rem;
+  margin-bottom: 5.1rem;
+}
+
+.promotion-img1 {
+  width: 122.2rem;
+  height: 93.7rem;
+  background: url("../images/promotion-1.jpg");
+  background-size: 100%;
+  transition: background-size 0.5s;
+  cursor: pointer;
+}
+
+.promotion-img1:hover,
+.promotion-img2:hover,
+.promotion-img3:hover,
+.promotion-img4:hover {
+  background-size: 105%;
+}
+
+.promotion-flex {
+  position: relative;
+  display: flex;
+  width: 122.2rem;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.promotion-img2 {
+  width: 40.3rem;
+  height: 30.7rem;
+  background: url("../images/promotion-2.jpg");
+  background-size: 100%;
+  transition: background-size 0.5s;
+  cursor: pointer;
+}
+
+.promotion-img3 {
+  width: 40.3rem;
+  height: 30.7rem;
+  background: url("../images/promotion-3.jpg");
+  background-size: 100%;
+  transition: background-size 0.5s;
+  cursor: pointer;
+}
+
+.promotion-img4 {
+  width: 40.3rem;
+  height: 30.7rem;
+  background: url("../images/promotion-4.jpg");
+  background-size: 100%;
+  transition: background-size 0.5s;
+  cursor: pointer;
+}
+
+/* insta_event page */
+.insta_event {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 46.8rem;
+  background-color: #545351;
+  text-align: center;
+}
+
+.insta_event span {
+  display: block;
+  padding-top: 7.1rem;
+  padding-bottom: 4rem;
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.insta_event-img {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.insta_event-img img {
+  cursor: pointer;
+}
+
+/* best part */
+.best {
+  position: relative;
+  display: block;
+  height: 107.2rem;
+  width: 100vw;
+  background-color: #F7F7F7;
+  margin-bottom: 15.5rem;
+}
+
+.best-txt {
+  position: relative;
+  display: block;
+  padding-top: 12.9rem;
+  margin-bottom: 4rem;
+}
+
+.best-txt > span {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+}
+
+.best-txt > a {
+  padding: 0.8rem 2.9rem;
+  background-color: #bfbfbf;
+  border-radius: 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  float: right;
+}
+
+.best-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-item1 {
+  position: relative;
+  width: 60rem;
+  height: 74rem;
+  cursor: pointer;
+}
+
+.best-item1:hover .best-item1-border {
+  border: 5px solid #545351;
+}
+
+.best-item1-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 59.7rem;
+  height: 69.6rem;
+  border: 0px solid #545351;
+  transition: border 0.1s;
+}
+
+.best-item1 > span {
+  display: block;
+  padding-top: 0.2rem;
+
+}
+
+.best-item1-txt1 {
+  font-size: 1.8rem;
+}
+
+.best-item1-txt2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.best-item2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 60rem;
+  height: 74rem;
+}
+
+.best-item2-box {
+  position: relative;
+  cursor: pointer;
+  height: 33rem;
+}
+
+.best-item2-box img {
+  position: relative;
+  display: block;
+  width: 28.3rem;
+  height: 28.3rem;
+}
+
+.best-item2-box span {
+  display: block;
+  padding-top: 0.2rem;
+}
+
+.best-item2-border {
+  position: absolute;
+  top: 0rem;
+  display: inline-block;
+  width: 28.3rem;
+  height: 28.3rem;
+  z-index: 999;
+  border: 0px solid #545351;
+  transition: border 0.1s;
+}
+
+.best-item2>div:hover .best-item2-border {
+  border: 5px solid #545351;
+}
+
+/* product page */
+.product {
+  position: relative;
+  display: block;
+  margin-bottom: 23.2rem;
+}
+
+.product p {
+  font-size: 3.3rem;
+  font-weight: 200;
+  text-align: right;
+  line-height: 5.2rem;
+  margin-bottom: 4.9rem;
+}
+
+.product-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.1rem;
+}
+
+.product-item {
+  position: relative;
+  display: block;
+  width: 17.8rem;
+  height: 22.2rem;
+  border: 1px solid #C5C5C5;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none;
+
+  transition: all 0.2s;
+}
+
+.product-item:hover {
+  box-shadow: 0px 0px 10px #C5C5C5;
+}
+
+.product-item img {
+  margin-top: 6.3rem;
+}
+
+.product-item span {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+.product-button {
+  text-align: center;
+}
+
+.product a {
+  font-size: 3.3rem;
+  padding: 2rem 7.7rem;
+  color: #fff;
+  background-color: #57636F;
+  border-radius: 50px;
+}
+
+/* footer page */
+.footer {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 53.7rem;
+  background-color: #313131;
+  text-align: center;
+}
+
+.footer img {
+  padding: 5.3rem 0;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.7rem;
+  margin-bottom: 2.1rem;
+}
+
+.icon-center {
+  margin: 0 1rem;
+}
