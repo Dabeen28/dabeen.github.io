@@ -102,13 +102,20 @@ $(document).ready(function () {
       event.preventDefault();
         $(".modal-1").fadeIn(); 
     });
+
     $(".tour-modal").click(function (event) { 
       event.preventDefault();
       $(".modal-2").fadeIn(); 
     });
+    
     $(".jeju-modal").click(function (event) { 
       event.preventDefault();
       $(".modal-3").fadeIn(); 
+    });
+
+    $(".sidiz-modal").click(function (event) { 
+      event.preventDefault();
+      $(".modal-4").fadeIn(); 
     });
 
 
@@ -121,6 +128,9 @@ $(document).ready(function () {
     });
     $(".modal-3>.modal-cont button").click(function () { 
       $(".modal-3").fadeOut(); 
+    });
+    $(".modal-4>.modal-cont button").click(function () { 
+      $(".modal-4").fadeOut(); 
     });
 
 
