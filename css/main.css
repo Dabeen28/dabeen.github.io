@@ -1399,7 +1399,8 @@ h2 {
 /* design modal */
 .modal-1,
 .modal-2,
-.modal-3 {
+.modal-3,
+.modal-4 {
   position: fixed;
   left: 0;
   top: 0;
